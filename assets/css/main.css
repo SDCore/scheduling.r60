@@ -5,9 +5,38 @@ body {
   background: #EFEFEF;
   font-family: "RobotoDraft", Arial, sans-serif, Helvetica; }
 
+.clear {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.nav {
+  width: 100%;
+  z-index: 9999;
+  font-size: 14pt;
+  padding: 18px 20px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37); }
+  .nav > .brand {
+    color: #2196F3;
+    font-weight: bold;
+    text-decoration: none; }
+  .nav > .right > a {
+    color: #B6B6B6;
+    margin-left: 5px;
+    margin-right: 5px; }
+
 .left-nav {
+  width: 19%;
   height: 100%;
-  width: 250px;
+  z-index: 9998;
   position: fixed;
   background: FFFFFF;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.49); }
@@ -24,7 +53,8 @@ body {
       text-align: center;
       background: rgba(33, 150, 243, 0.5); }
   .left-nav > .links {
-    width: 100%; }
+    width: 100%;
+    margin-top: 30px; }
     .left-nav > .links > a {
       width: 100%;
       color: #212121;
@@ -32,10 +62,49 @@ body {
       font-size: 14pt;
       padding: 16px 24px;
       text-decoration: none;
+      box-sizing: border-box;
+      transition: all 0.18s ease;
       -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      -webkit-box-sizing: border-box; }
       .left-nav > .links > a:hover {
         background: #CCCCCC; }
+      .left-nav > .links > a.active {
+        color: #FFFFFF;
+        background: #2196F3; }
+        .left-nav > .links > a.active:hover {
+          background: #1976D2; }
+
+.container {
+  width: 79%;
+  float: right;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 12px; }
+  .container > .welcome {
+    margin: 0px;
+    padding: 0px;
+    color: #2196F3;
+    font-weight: 500; }
+
+.card {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 1px;
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37); }
+  .card > .card-title {
+    color: #FFFFFF;
+    font-size: 14pt;
+    font-weight: 300;
+    padding: 6px 15px;
+    background: #2196F3;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px; }
+  .card > .card-content {
+    padding: 8px 20px; }
+  .card > .card-footer {
+    padding: 6px 15px;
+    border-top: 1px solid #DDDDDD; }
 
 /*# sourceMappingURL=main.css.map */
