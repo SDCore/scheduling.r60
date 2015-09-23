@@ -5,4 +5,37 @@ body {
   background: #EFEFEF;
   font-family: "RobotoDraft", Arial, sans-serif, Helvetica; }
 
+.left-nav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  background: FFFFFF;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.49); }
+  .left-nav > .header {
+    width: 100%;
+    height: 150px;
+    background: url(http://www.lirent.net/wp-content/uploads/2014/10/Google-Now-Wallpaper-1-800x450.png);
+    background-size: cover; }
+    .left-nav > .header > .brand {
+      width: 100%;
+      color: #FFFFFF;
+      font-size: 16pt;
+      line-height: 150px;
+      text-align: center;
+      background: rgba(33, 150, 243, 0.5); }
+  .left-nav > .links {
+    width: 100%; }
+    .left-nav > .links > a {
+      width: 100%;
+      color: #212121;
+      display: block;
+      font-size: 14pt;
+      padding: 16px 24px;
+      text-decoration: none;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .left-nav > .links > a:hover {
+        background: #CCCCCC; }
+
 /*# sourceMappingURL=main.css.map */
