@@ -41,9 +41,53 @@
 				<div class="card">
 					<div class="card-title">Recent Tickets</div>
 					<div class="card-content">
-						asd
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Date</th>
+									<th>Detail</th>
+									<th>Completed</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John Smith</td>
+									<td>9/23/2015</td>
+									<td>#1</td>
+									<td>No</td>
+								</tr>
+								<tr>
+									<td>John Hurt</td>
+									<td>9/23/2015</td>
+									<td>#6</td>
+									<td>No</td>
+								</tr>
+								<tr>
+									<td>John Smith</td>
+									<td>9/23/2015</td>
+									<td>#1</td>
+									<td>No</td>
+								</tr>
+								<tr>
+									<td>John Hurt</td>
+									<td>9/23/2015</td>
+									<td>#6</td>
+									<td>No</td>
+								</tr>
+								<tr>
+									<td>John Smith</td>
+									<td>9/23/2015</td>
+									<td>#1</td>
+									<td>No</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="card-footer">Footer</div>
+					<div class="card-footer">
+						<a class="button-flat right">View All</a>
+						<div class="clear"></div>
+					</div>
 				</div>
 			</div>
 
@@ -51,9 +95,14 @@
 				<div class="card">
 					<div class="card-title">Notifications</div>
 					<div class="card-content">
-						asd
+						<div class="notification">
+							A thing has been updated.
+						</div>
 					</div>
-					<div class="card-footer">Footer</div>
+					<div class="card-footer">
+						<a class="button-flat right">View All</a>
+						<div class="clear"></div>
+					</div>
 				</div>
 			</div>
 		</div>
