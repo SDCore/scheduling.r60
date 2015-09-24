@@ -41,7 +41,7 @@
 				<div class="card">
 					<div class="card-title">Recent Tickets</div>
 					<div class="card-content">
-						<table class="table">
+						<table class="table" padding="10">
 							<thead>
 								<tr>
 									<th>Name</th>
@@ -95,6 +95,9 @@
 				<div class="card">
 					<div class="card-title">Notifications</div>
 					<div class="card-content">
+						<div class="notification">
+							A thing has been updated.
+						</div>
 						<div class="notification">
 							A thing has been updated.
 						</div>
