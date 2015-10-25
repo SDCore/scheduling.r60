@@ -156,7 +156,9 @@
                     <div class="card-content">
                         <p><b>Phone Number:</b> <?php echo $pnumber; ?>
                         <br />
-                        <b>Date:</b> <?php echo $date; ?></p>
+                        <b>Date:</b> <?php echo $date; ?>
+                        <br />
+                        <b>Notes:</b> <?php echo $notes; ?></p>
                         <p><?php echo $option; ?></p>
                         <p>
                             <div class="row">
