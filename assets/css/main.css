@@ -20,25 +20,34 @@ body {
   font-size: 14pt;
   padding: 18px 20px;
   position: relative;
+  background: #FFFFFF;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37); }
   .nav > .brand {
-    color: #2196F3;
+    color: #2196f3;
     font-weight: bold;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.18s ease; }
+    .nav > .brand:hover {
+      color: #666666;
+      transition: all 0.18s ease; }
   .nav > .right > a {
-    color: #B6B6B6;
+    color: #b6b6b6;
     margin-left: 5px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    transition: all 0.18s ease; }
+  .nav > .right > .navigation:hover {
+    color: #666666;
+    transition: all 0.18s ease; }
 
 .left-nav {
   width: 19%;
   height: 100%;
   z-index: 9998;
   position: fixed;
-  background: FFFFFF;
+  background: #FFFFFF;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.49); }
   .left-nav > .header {
     width: 100%;
@@ -48,7 +57,8 @@ body {
     .left-nav > .header > .brand {
       width: 100%;
       color: #FFFFFF;
-      font-size: 16pt;
+      font-size: 20pt;
+      font-weight: 200;
       line-height: 150px;
       text-align: center;
       background: rgba(33, 150, 243, 0.5); }
@@ -70,9 +80,9 @@ body {
         background: #CCCCCC; }
       .left-nav > .links > a.active {
         color: #FFFFFF;
-        background: #2196F3; }
+        background: #2196f3; }
         .left-nav > .links > a.active:hover {
-          background: #1976D2; }
+          background: #1976d2; }
 
 .container {
   width: 79%;
@@ -83,7 +93,7 @@ body {
   .container > .welcome {
     margin: 0px;
     padding: 0px;
-    color: #2196F3;
+    color: #2196f3;
     font-weight: 500; }
 
 .card {
@@ -98,7 +108,7 @@ body {
     font-size: 14pt;
     font-weight: 300;
     padding: 6px 15px;
-    background: #2196F3;
+    background: #2196f3;
     border-top-left-radius: 1px;
     border-top-right-radius: 1px; }
   .card > .card-content {
@@ -129,7 +139,7 @@ body {
 .button-flat {
   font-size: 12pt;
   cursor: pointer;
-  color: #2196F3;
+  color: #2196f3;
   padding: 4px 8px;
   font-weight: bold;
   text-decoration: none;
@@ -142,4 +152,81 @@ body {
 td {
   padding: 5px; }
 
-/*# sourceMappingURL=main.css.map */
+.button-raised {
+  width: 100%;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 2px;
+  background: #2196f3;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37); }
+  .button-raised:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37); }
+
+input[type='text'] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #DEDEDE;
+  transition: border-bottom 0.18s ease; }
+  input[type='text']:focus {
+    border-bottom: 2px solid #ABABAB;
+    transition: border-bottom 0.18s ease; }
+
+input[type='password'] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #DEDEDE;
+  transition: border-bottom 0.18s ease; }
+  input[type='password']:focus {
+    border-bottom: 2px solid #ABABAB;
+    transition: border-bottom 0.18s ease; }
+
+input[type='date'] {
+  width: 100%;
+  border: none;
+  font-size: 18pt;
+  padding: 12px 14px;
+  border-bottom: 2px solid #DEDEDE; }
+
+select {
+  width: 100%;
+  border: none;
+  font-size: 18pt;
+  padding: 12px 14px;
+  border-bottom: 2px solid #DEDEDE; }
+
+.pagination {
+  list-style: none; }
+  .pagination > li {
+    border: 1px solid #000000;
+    float: left;
+    display: inline-block;
+    padding: 4px 10px; }
+  .pagination .active {
+    background: #000;
+    color: #FFF; }
+    .pagination .active > a {
+      color: #FFFFFF; }
+  .pagination .disabled {
+    color: #DDDDDD; }
+    .pagination .disabled > a {
+      color: #DDDDDD; }

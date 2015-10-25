@@ -34,6 +34,7 @@ body {
 	font-size: 14pt;
 	padding: 18px 20px;
 	position: relative;
+	background: #FFFFFF;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -42,11 +43,21 @@ body {
 		color: $primary;
 		font-weight: bold;
 		text-decoration: none;
+		transition: all 0.18s ease;
+		&:hover {
+			color: #666666;
+			transition: all 0.18s ease;
+		}
 	}
 	&>.right>a {
 		color: $divider;
 		margin-left: 5px;
 		margin-right: 5px;
+		transition: all 0.18s ease;
+	}
+	&>.right>.navigation:hover {
+		color: #666666;
+		transition: all 0.18s ease;
 	}
 }
 
@@ -55,7 +66,7 @@ body {
 	height: 100%;
 	z-index: 9998;
 	position: fixed;
-	background: FFFFFF;
+	background: #FFFFFF;
 	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.49);
 	&>.header {
 		width: 100%;
@@ -65,7 +76,8 @@ body {
 		&>.brand {
 			width: 100%;
 			color: #FFFFFF;
-			font-size: 16pt;
+			font-size: 20pt;
+			font-weight: 200;
 			line-height: 150px;
 			text-align: center;
 			background: rgba(33, 150, 243, 0.5);
@@ -181,4 +193,97 @@ body {
 
 td {
 	padding: 5px;
+}
+
+.button-raised {
+	width: 100%;
+	border: none;
+	color: #FFFFFF;
+	font-weight: 500;
+	padding: 8px 20px;
+	text-align: center;
+	border-radius: 2px;
+	background: $primary;
+	display: inline-block;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+	&:hover {
+		color: #FFFFFF;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+	}
+}
+
+input[type='text'] {
+	width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #DEDEDE;
+    transition: border-bottom 0.18s ease;
+    &:focus {
+        border-bottom: 2px solid #ABABAB;
+        transition: border-bottom 0.18s ease;
+    }
+}
+
+input[type='password'] {
+	width: 100%;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #DEDEDE;
+    transition: border-bottom 0.18s ease;
+    &:focus {
+        border-bottom: 2px solid #ABABAB;
+        transition: border-bottom 0.18s ease;
+    }
+}
+
+input[type='date'] {
+	width: 100%;
+	border: none;
+	font-size: 18pt;
+	padding: 12px 14px;
+	border-bottom: 2px solid #DEDEDE;
+}
+
+select {
+	width: 100%;
+	border: none;
+	font-size: 18pt;
+	padding: 12px 14px;
+	border-bottom: 2px solid #DEDEDE;
+}
+
+.pagination {
+	list-style: none;
+	&>li {
+		border: 1px solid #000000;
+		float: left;
+		display: inline-block;
+		padding: 4px 10px;
+	}
+	.active {
+			background: #000;
+			color: #FFF;
+			&>a{
+				color: #FFFFFF;
+			}
+		}
+		.disabled {
+			color: #DDDDDD;
+			&>a {
+				color: #DDDDDD;
+			}
+		}
 }
