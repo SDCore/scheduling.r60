@@ -18,7 +18,13 @@
 
 		<div class="right">
 			<a href="#" class="navigation"><i class="fa fa-cog"></i></a>
-			<a href="#" class="navigation"><i class="fa fa-power-off"></i></a>
+			<?php
+				if(logged_in() === true) {
+					echo '<a href="/signout" class="navigation"><i class="fa fa-power-off"></i> Sign Out</a>';
+				}else{
+					echo '<a href="/signin" class="navigation"><i class="fa fa-power-off"></i> Sign In</a>';
+				}
+			?>
 		</div>
 	</div>
 

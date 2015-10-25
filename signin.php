@@ -1,7 +1,9 @@
 <?php require_once("./assets/core/init.php"); require_once("./include/navbar.php"); ?>
     
     <?php
-    
+        
+        error_reporting(0);
+        
         if(logged_in() === true) {
             header("location: ./index");
         }else{

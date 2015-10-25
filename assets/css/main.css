@@ -169,6 +169,10 @@ td {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37); }
+  .button-raised:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37); }
 
 input[type='text'] {
   width: 100%;
@@ -189,7 +193,7 @@ input[type='password'] {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 10px;
+  font-size: 14pt;
   margin-top: 10px;
   padding: 12px 14px;
   border-radius: 3px;

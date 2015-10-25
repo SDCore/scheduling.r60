@@ -2,6 +2,12 @@
 
 <?php
     
+    	if(logged_in() === false) {
+            header("location: /signin");
+        }else{
+                        
+        }
+
         $tbl_name = "detail_tickets";       //your table name
         // How many adjacent pages should be shown on each side?
         $adjacents = 2;
