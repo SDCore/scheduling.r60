@@ -17,7 +17,7 @@
         
         /* Setup vars for query. */
         $targetpage = "tickets";   //your file name  (the name of this file)
-        $limit = 8;                                 //how many items to show per page
+        $limit = 12;                                 //how many items to show per page
         $page = $_GET['page'];
         if($page) 
             $start = ($page - 1) * $limit;          //first item to display on this page
