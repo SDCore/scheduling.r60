@@ -139,6 +139,7 @@
                 <ol>
                     <li>Full Service Wash</li>
                     <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
                 </ol>
             ";
             $active7 = "selected";
@@ -153,6 +154,9 @@
         }elseif($options == 'Completed') {
             $option = "<center><h3 style='color: #20B473;'>Completed</h3></center>";
             $oa3 = "selected";
+        }elseif($options == 'Appointment') {
+            $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
+            $oa4 = "selected";
         }
         
         $totalprice = $serviceprice - $discount;
@@ -230,8 +234,9 @@
 	                        </div>
 	                        <div class="col-md-4">
 	                            <select name="optionsselect" id="optionsselect">
-	                                <option value="Prepaid" <?php if(isset($oa1)) {echo $oa1; } ?>>Prepaid</option>
-	                                <option value="Paid" <?php if(isset($oa2)) {echo $oa2; } ?>>Paid</option>
+	                                <option value="Paid" <?php if(isset($oa1)) {echo $oa1; } ?>>Paid</option>
+	                                <option value="Prepaid" <?php if(isset($oa2)) {echo $oa2; } ?>>Prepaid</option>
+                                    <option value="Appointment" <?php if(isset($oa4)) { echo $oa4; } ?>>Appointment</option>
 	                                <option value="Completed" <?php if(isset($oa3)) { echo $oa3; } ?>>Completed</option>
 	                            </select>
 	                        </div>

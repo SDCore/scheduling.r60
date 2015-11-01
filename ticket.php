@@ -132,6 +132,7 @@
                 <ol>
                     <li>Full Service Wash</li>
                     <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
                 </ol>
             ";
         }
@@ -142,6 +143,8 @@
             $option = "<center><h3 style='color: #E14747;'>Prepaid</h3></center>";
         }elseif($options == 'Completed') {
             $option = "<center><h3 style='color: #20B473;'>Completed</h3></center>";
+        }elseif($options == 'Appointment') {
+            $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
         }
         
         $totalprice = $serviceprice - $discount;

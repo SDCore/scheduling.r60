@@ -168,12 +168,14 @@
 			                        }
 			                        
 			                        if($options == 'Paid') {
-			                            $option = "<center><h6 style='color: #E14747; margin: 0px;'>X</h6></center>";
+			                            $option = "<center><h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6></center>";
 			                        }elseif($options == 'Prepaid') {
-			                            $option = "<center><h6 style='color: #E14747; margin: 0px;'>X</h6></center>";
+			                            $option = "<center><h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6></center>";
 			                        }elseif($options == 'Completed') {
-			                            $option = "<center><h6 style='color: #20B473; margin: 0px;'>&check;</h6></center>";
-			                        }
+			                            $option = "<center><h6 style='color: #20B473; margin: 0px; font-size: 20px;'>&check;</h6></center>";
+			                        }elseif($options == 'Appointment') {
+                                        $option = "<center><h6 style='color: #FFC017; margin: 0px; font-size: 20px;'><i class='fa fa-clock-o'></i></h6></center>";
+                                    }
 
 			                        echo '<tr>';
 			                        echo '<td><a href="'.$site.'/ticket?id='.$row['ticket_id'].'">'.$row['first_name'].' '.$row['last_name'].'</a></td>';
