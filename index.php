@@ -90,7 +90,7 @@
 					<div class="card-title">Notifications</div>
 					<div class="card-content">
 						<div class="notification">
-							A few things might be a little weird here and there, most of the bugs and effeciency is being ironed out.
+							<b>PSST!</b> New things have been added/changed. The last name field no longer is required, there's a dollar sign before the discount field, and there's a field to input who created the ticket. Have fun!
 						</div>
 					</div>
 					<div class="card-footer">
