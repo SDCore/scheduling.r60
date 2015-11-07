@@ -62,7 +62,7 @@
 			        	<input type="text" name="vcolor" id="vcolor" class="validate" required="required" placeholder="Vehicle Color" />
 			        </div>
 			        <div class="col-md-4">
-			        	<input type="text" name="discount" id="discount" class="validate" required="required" placeholder="Discount" />
+			        	<input type="text" name="discount" id="discount" class="validate discount-icon" required="required" placeholder="Discount" style="padding-left: 22px;" />
 			        </div>
 			        <div class="col-md-4">
 			        	<select name="serviceselect" id="serviceselect">

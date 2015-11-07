@@ -292,3 +292,14 @@ select {
 			}
 		}
 }
+
+.discount-icon {
+	background-image: url(../imgs/discount-dollarsign.png);
+	background-position: 2px 14px;
+	background-repeat: no-repeat;
+	&:focus {
+		background-image: url(../imgs/discount-dollarsign.png);
+		background-position: 2px 14px;
+		background-repeat: no-repeat;
+	}
+}
