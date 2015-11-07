@@ -18,11 +18,12 @@
         $services = $_POST['serviceselect'];
         $ticketid = microtime() + floor(rand()*10000) + floor(rand()*314);
         $notes = $_POST['notes'];
+        $tcreator = $_POST['ticket_creator'];
             
         $insertticket = "INSERT INTO detail_tickets 
-                        (id, first_name, last_name, phone_number, date, vehicle_make, vehicle_model, vehicle_color, discount, services, pre_paid_done, user_id, ticket_id, notes)
+                        (id, first_name, last_name, phone_number, date, vehicle_make, vehicle_model, vehicle_color, discount, services, pre_paid_done, user_id, ticket_id, notes, ticket_creator)
                         VALUES
-                        ('', '$firstname', '$lastname', '$pnumber', '$date', '$vmake', '$vmodel', '$vcolor', '$discount', '$services', '$options', '$user_id', '$ticketid', '$notes')";
+                        ('', '$firstname', '$lastname', '$pnumber', '$date', '$vmake', '$vmodel', '$vcolor', '$discount', '$services', '$options', '$user_id', '$ticketid', '$notes', '$tcreator')";
             
         mysql_query($insertticket) or die(mysql_error());
         header("location: /ticket?id=".$ticketid."");
@@ -84,8 +85,13 @@
 			                <option value="Completed">Completed</option>
 			            </select>
 			        </div>
-			        <div class="col-md-12">
+			    </div>
+			    <div class="row">
+			        <div class="col-md-8">
 						<input type="text" name="notes" id="notes" class="input" placeholder="Notes" />
+			        </div>
+			        <div class="col-md-4">
+			        	<input type="text" name="ticket_creator" id="ticket_creator" class="input" placeholder="Ticket Creator Name" required="required" />
 			        </div>
 			        
 			        <div class="col-md-12">

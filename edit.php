@@ -27,6 +27,7 @@
             $uid = $row['user_id'];
             $ticket_id = $row['ticket_id'];
             $note = $row['notes'];
+            $tcreator = $row['ticket_creator'];
         }
         
         if($services == 'wax'){
@@ -240,9 +241,15 @@
 	                                <option value="Completed" <?php if(isset($oa3)) { echo $oa3; } ?>>Completed</option>
 	                            </select>
 	                        </div>
-	                        <div class="col-md-12">
+	                    </div>
+	                    <div class="row">
+	                        <div class="col-md-8">
 								<input type="text" name="notes" id="notes" value="<?php echo $note; ?>" placeholder="Notes" />
 	                        </div>
+	                        <div class="col-md-4">
+	                        	<input type="text" name="ticket_creator" id="ticket_creator" value="<?php echo $tcreator; ?>" disabled="disabled" />
+	                        </div>
+
 	                        <div class="col-md-12">
 	                            <input type="submit" name="updateticket" id="updateticket" class="button-raised" value="Update Ticket" />
 	                        </div>

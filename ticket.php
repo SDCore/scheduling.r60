@@ -27,6 +27,7 @@
             $uid = $row['user_id'];
             $ticket_id = $row['ticket_id'];
             $notes = $row['notes'];
+            $tcreator = $row['ticket_creator'];
         }
         
         if($services == 'wax'){
@@ -155,7 +156,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-title"><?php echo $firstname." ".$lastname." <span style='float: right;'>Invoice #".$tid."</span>"; ?></div>
+                    <div class="card-title"><?php echo $firstname." ".$lastname." <span style='float: right;'>Invoice #".$tid." - ".$tcreator."</span>"; ?></div>
                     <div class="card-content">
                         <p><b>Phone Number:</b> <?php echo $pnumber; ?>
                         <br />
@@ -183,7 +184,7 @@
                         <p><?php echo $servicedetails; ?></p>
                         <div class="row">
                             <div class="col-md-12">
-                                <div style="float: right;">Sub Total $<?php echo $serviceprice; ?></div>
+                                <div style="float: right;">Sub Total - $<?php echo $serviceprice; ?></div>
                             </div>
                             <div class="col-md-12">
                                 <div style="float: right;">Discount - $<?php echo $discount; ?></div>
