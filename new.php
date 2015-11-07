@@ -42,7 +42,7 @@
 						<input type="text" name="firstname" id="firstname" class="validate" required="required" placeholder="First Name" />
 					</div>
 			        <div class="col-md-6">
-			        	<input type="text" name="lastname" id="lastname" class="validate" required="required" placeholder="Last Name" />
+			        	<input type="text" name="lastname" id="lastname" class="validate" placeholder="Last Name" />
 			        </div>
 			        <div class="col-md-6">
 			        	<input type="text" name="phonenum" id="phonenum" class="validate" required="required" placeholder="Phone Number" />
