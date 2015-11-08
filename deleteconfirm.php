@@ -26,7 +26,7 @@
             $options = $row['pre_paid_done'];
             $uid = $row['user_id'];
             $ticket_id = $row['ticket_id'];
-            $notes = $row['notes'];
+            $note = $row['notes'];
             $tcreator = $row['ticket_creator'];
         }
         
@@ -38,6 +38,7 @@
                     <li>Wax Special</li>
                 </ol>
             ";
+            $active = "selected";
         }elseif($services == 1) {
             $servicetitle = "#1 Interior Only Detail";
             $serviceprice = "99.00";
@@ -50,6 +51,7 @@
                     <li>All glass cleaned and polished</li>
                 </ol>
             ";
+            $active1 = "selected";
         }
         elseif($services == 2) {
             $servicetitle = "#2 Exterior Only Detail";
@@ -63,6 +65,7 @@
                     <li>Carnuba Wax</li>
                 </ol>
             ";
+            $active2 = "selected";
         }
         elseif($services == 3) {
             $servicetitle = "#3 Complete Interior & Exterior";
@@ -81,6 +84,7 @@
                     <li>All glass cleaned and polished</li>
                 </ol>
             ";
+            $active3 = "selected";
         }
         elseif($services == 4) {
             $servicetitle = "#4 Engine Detail";
@@ -94,6 +98,7 @@
                     <li>Apply dressing</li>
                 </ol>
             ";
+            $active4 = "selected";
         }
         elseif($services == 5) {
             $servicetitle = "#5 Paint Restoration";
@@ -107,6 +112,7 @@
                     <li>Meguiar's Polymer Synthetic Sealant applied</li>
                 </ol>
             ";
+            $active5 = "selected";
         }
         elseif($services == 6) {
             $servicetitle = "#6 Ultimate Interior & Exterior";
@@ -125,6 +131,7 @@
                     <li>All glass cleaned and polished</li>
                 </ol>
             ";
+            $active6 = "selected";
         }
         elseif($services == 7) {
             $servicetitle = "#7 Synthetic Sealer Special";
@@ -136,112 +143,60 @@
                     <li>Hand Wash</li>
                 </ol>
             ";
+            $active7 = "selected";
         }
         elseif($services == "hw") {
             $servicetitle = "Hand Wash - Car";
-            $serviceprice = "25";
+            $serviceprice = "135.00";
             $servicedetails = "
                 <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
                     <li>Hand Wash</li>
                 </ol>
             ";
+            $active8 = "selected";
         }
         elseif($services == "hwfs") {
             $servicetitle = "Hand Wash - Car w/ Full Service";
-            $serviceprice = "35";
+            $serviceprice = "135.00";
             $servicedetails = "
                 <ol>
-                    <li>Hand Wash</li>
                     <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
                 </ol>
             ";
+            $active9 = "selected";
         }
         elseif($services == "hwsuv") {
             $servicetitle = "Hand Wash - SUV";
-            $serviceprice = "35";
+            $serviceprice = "135.00";
             $servicedetails = "
                 <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
                     <li>Hand Wash</li>
                 </ol>
             ";
+            $active10 = "selected";
         }
         elseif($services == "hwsuvfs") {
             $servicetitle = "Hand Wash - SUV w/ Full Service";
-            $serviceprice = "45";
+            $serviceprice = "135.00";
             $servicedetails = "
                 <ol>
-                    <li>Hand Wash</li>
                     <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
                 </ol>
             ";
+            $active11 = "selected";
         }
         
-        if($options == 'Paid') {
-            $option = "<center><h3 style='color: #E14747;'>Paid</h3></center>";
-        }elseif($options == 'Prepaid') {
-            $option = "<center><h3 style='color: #E14747;'>Prepaid</h3></center>";
-        }elseif($options == 'Completed') {
-            $option = "<center><h3 style='color: #20B473;'>Completed</h3></center>";
-        }elseif($options == 'Appointment') {
-            $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
-        }
-        
-        $totalprice = $serviceprice - $discount;
-        
-    ?>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-title"><?php echo $firstname." ".$lastname." <span style='float: right;'>Invoice #".$tid." - ".$tcreator."</span>"; ?></div>
-                    <div class="card-content">
-                        <p><b>Phone Number:</b> <?php echo $pnumber; ?>
-                        <br />
-                        <b>Date:</b> <?php echo $date; ?>
-                        <br />
-                        <b>Notes:</b> <?php echo $notes; ?></p>
-                        <p><?php echo $option; ?></p>
-                        <p>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="#" target="_blank" class="button-raised print" disabled="disabled"><i class="fa fa-print"></i> Print</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised"><i class="fa fa-pencil"></i> Edit</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/deleteticket?id=<?php echo $ticket_id; ?>" class="button-raised delete"><i class="fa fa-trash-o"></i> Delete</a>
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-title"><?php echo $servicetitle; ?></div>
-                    <div class="card-content">
-                        <p><?php echo $servicedetails; ?></p>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float: right;">Sub Total - $<?php echo $serviceprice; ?></div>
-                            </div>
-                            <div class="col-md-12">
-                                <div style="float: right;">Discount - $<?php echo $discount; ?></div>
-                            </div>
-                            <hr style="border-bottom: 1px solid #666666;">
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="col-md-12">
-                            <div style="float: right;"><b>Total - $<?php echo $totalprice; ?></b></div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        mysql_query("DELETE FROM detail_tickets WHERE ticket_id = '$ticket_id'");
+        header("location: $site/tickets?page=1")
+
+?>
     
 <?php require_once("./include/footer.php"); ?>

@@ -26,7 +26,7 @@ body {
   -webkit-box-sizing: border-box;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37); }
   .nav > .brand {
-    color: #2196f3;
+    color: #2196F3;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.18s ease; }
@@ -34,7 +34,7 @@ body {
       color: #666666;
       transition: all 0.18s ease; }
   .nav > .right > a {
-    color: #b6b6b6;
+    color: #B6B6B6;
     margin-left: 5px;
     margin-right: 5px;
     transition: all 0.18s ease; }
@@ -80,9 +80,9 @@ body {
         background: #CCCCCC; }
       .left-nav > .links > a.active {
         color: #FFFFFF;
-        background: #2196f3; }
+        background: #2196F3; }
         .left-nav > .links > a.active:hover {
-          background: #1976d2; }
+          background: #1976D2; }
 
 .container {
   width: 79%;
@@ -93,7 +93,7 @@ body {
   .container > .welcome {
     margin: 0px;
     padding: 0px;
-    color: #2196f3;
+    color: #2196F3;
     font-weight: 500; }
 
 .card {
@@ -108,7 +108,7 @@ body {
     font-size: 14pt;
     font-weight: 300;
     padding: 6px 15px;
-    background: #2196f3;
+    background: #2196F3;
     border-top-left-radius: 1px;
     border-top-right-radius: 1px; }
   .card > .card-content {
@@ -139,7 +139,7 @@ body {
 .button-flat {
   font-size: 12pt;
   cursor: pointer;
-  color: #2196f3;
+  color: #2196F3;
   padding: 4px 8px;
   font-weight: bold;
   text-decoration: none;
@@ -160,7 +160,7 @@ td {
   padding: 8px 20px;
   text-align: center;
   border-radius: 2px;
-  background: #2196f3;
+  background: #2196F3;
   display: inline-block;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37); }
@@ -178,7 +178,7 @@ td {
     background: #999999;
     pointer-events: none; }
   .button-raised.delete {
-    /* background: #E14747; */ }
+    background: #E14747; }
   .button-raised.print {
     /* background: #20B473; */ }
 
@@ -251,3 +251,5 @@ select {
     background-image: url(../imgs/discount-dollarsign.png);
     background-position: 2px 14px;
     background-repeat: no-repeat; }
+
+/*# sourceMappingURL=main.css.map */
