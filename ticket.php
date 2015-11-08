@@ -137,6 +137,44 @@
                 </ol>
             ";
         }
+        elseif($services == "hw") {
+            $servicetitle = "Hand Wash - Car";
+            $serviceprice = "25";
+            $servicedetails = "
+                <ol>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+        }
+        elseif($services == "hwfs") {
+            $servicetitle = "Hand Wash - Car w/ Full Service";
+            $serviceprice = "35";
+            $servicedetails = "
+                <ol>
+                    <li>Hand Wash</li>
+                    <li>Full Service Wash</li>
+                </ol>
+            ";
+        }
+        elseif($services == "hwsuv") {
+            $servicetitle = "Hand Wash - SUV";
+            $serviceprice = "35";
+            $servicedetails = "
+                <ol>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+        }
+        elseif($services == "hwsuvfs") {
+            $servicetitle = "Hand Wash - SUV w/ Full Service";
+            $serviceprice = "45";
+            $servicedetails = "
+                <ol>
+                    <li>Hand Wash</li>
+                    <li>Full Service Wash</li>
+                </ol>
+            ";
+        }
         
         if($options == 'Paid') {
             $option = "<center><h3 style='color: #E14747;'>Paid</h3></center>";
@@ -194,7 +232,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="col-md-12">
-                            <div style="float: right;"><b>Total $<?php echo $totalprice; ?></b></div>
+                            <div style="float: right;"><b>Total - $<?php echo $totalprice; ?></b></div>
                         </div>
                         <div class="clear"></div>
                     </div>

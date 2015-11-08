@@ -75,6 +75,10 @@
 			                <option value="5">#5 Paint Restoration</option>
 			                <option value="6">#6 Ultimate</option>
 			                <option value="7">#7 Synthetic Sealer</option>
+			                <option value="hw">Hand Wash - Car</option>
+			                <option value="hwfs">Hand Wash - Car w/ Full Service</option>
+			                <option value="hwsuv">Hand Wash - SUV</option>
+			                <option value="hwsuvfs">Hand Wash - SUV w/ Full Service</option>
 			            </select>
 			        </div>
 			        <div class="col-md-4">

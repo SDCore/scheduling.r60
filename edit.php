@@ -145,6 +145,54 @@
             ";
             $active7 = "selected";
         }
+        elseif($services == "hw") {
+            $servicetitle = "Hand Wash - Car";
+            $serviceprice = "135.00";
+            $servicedetails = "
+                <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+            $active8 = "selected";
+        }
+        elseif($services == "hwfs") {
+            $servicetitle = "Hand Wash - Car w/ Full Service";
+            $serviceprice = "135.00";
+            $servicedetails = "
+                <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+            $active9 = "selected";
+        }
+        elseif($services == "hwsuv") {
+            $servicetitle = "Hand Wash - SUV";
+            $serviceprice = "135.00";
+            $servicedetails = "
+                <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+            $active10 = "selected";
+        }
+        elseif($services == "hwsuvfs") {
+            $servicetitle = "Hand Wash - SUV w/ Full Service";
+            $serviceprice = "135.00";
+            $servicedetails = "
+                <ol>
+                    <li>Full Service Wash</li>
+                    <li>Claybar Treatment</li>
+                    <li>Hand Wash</li>
+                </ol>
+            ";
+            $active11 = "selected";
+        }
         
         if($options == 'Paid') {
             $option = "<center><h3 style='color: #E14747;'>Paid</h3></center>";
@@ -231,6 +279,10 @@
 	                                <option value="5" <?php if(isset($active5)) {echo $active5; } ?>>#5 Paint Restoration</option>
 	                                <option value="6" <?php if(isset($active6)) {echo $active6; } ?>>#6 Ultimate</option>
 	                                <option value="7" <?php if(isset($active7)) {echo $active7; } ?>>#7 Synthetic Sealer</option>
+	                                <option value="hw" <?php if(isset($active8)) {echo $active8; } ?>>Hand Wash - Car</option>
+					                <option value="hwfs" <?php if(isset($active9)) {echo $active9; } ?>>Hand Wash - Car w/ Full Service</option>
+					                <option value="hwsuv" <?php if(isset($active10)) {echo $active10; } ?>>Hand Wash - SUV</option>
+					                <option value="hwsuvfs" <?php if(isset($active11)) {echo $active11; } ?>>Hand Wash - SUV w/ Full Service</option>
 	                            </select>
 	                        </div>
 	                        <div class="col-md-4">
