@@ -218,6 +218,17 @@ td {
 		text-decoration: none;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
 	}
+	&[disabled] {
+		color: #DDDDDD;
+		background: #999999;
+		pointer-events: none;
+	}
+	&.delete {
+		/* background: #E14747; */
+	}
+	&.print {
+		/* background: #20B473; */
+	}
 }
 
 input[type='text'] {

@@ -173,6 +173,14 @@ td {
     color: #FFFFFF;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37); }
+  .button-raised[disabled] {
+    color: #DDDDDD;
+    background: #999999;
+    pointer-events: none; }
+  .button-raised.delete {
+    /* background: #E14747; */ }
+  .button-raised.print {
+    /* background: #20B473; */ }
 
 input[type='text'] {
   width: 100%;
