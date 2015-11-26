@@ -2,6 +2,8 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 100%;
+  min-height: 100%;
   background: #EFEFEF;
   font-family: "RobotoDraft", Arial, sans-serif, Helvetica; }
 
@@ -96,6 +98,12 @@ body {
     color: #2196F3;
     font-weight: 500; }
 
+.print-container {
+  width: 100%;
+  height: 33%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .card {
   width: 100%;
   margin-top: 15px;
@@ -116,6 +124,19 @@ body {
   .card > .card-footer {
     padding: 6px 15px;
     border-top: 1px solid #DDDDDD; }
+
+.print-card {
+  width: 100%;
+  border-radius: 1px; }
+  .print-card > .card-footer {
+    padding: 6px 15px;
+    border-top: 1px solid #EEEEEE; }
+  .print-card > .card-content {
+    margin-left: auto;
+    margin-right: auto; }
+  .print-card > .card-content > .print-30 {
+    width: 33%;
+    float: left; }
 
 .table {
   width: 100%; }
@@ -180,7 +201,7 @@ td {
   .button-raised.delete {
     background: #E14747; }
   .button-raised.print {
-    /* background: #20B473; */ }
+    background: #20B473; }
 
 input[type='text'] {
   width: 100%;

@@ -54,6 +54,18 @@
 			                        elseif($services == 7) {
 			                            $servicetitle = "#7 Synthetic Sealer Special";
 			                        }
+			                        elseif($services == "hw") {
+                                        $servicetitle = "Hand Wash - Car";
+                                    }
+                                    elseif($services == "hwfs") {
+                                        $servicetitle = "Hand Wash - Car w/ Full Service";
+                                    }
+                                    elseif($services == "hwsuv") {
+                                        $servicetitle = "Hand Wash - SUV";
+                                    }
+                                    elseif($services == "hwsuvfs") {
+                                        $servicetitle = "Hand Wash - SUV w/ Full Service";
+                                    }
 			                        
 			                        if($options == 'Paid') {
 			                            $option = "<center><h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6></center>";

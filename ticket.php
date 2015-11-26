@@ -205,7 +205,7 @@
                         <p>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <a href="#" target="_blank" class="button-raised print" disabled="disabled"><i class="fa fa-print"></i> Print</a>
+                                    <a href="<?php echo $site; ?>/print?id=<?php echo $ticket_id; ?>" target="_blank" class="button-raised print"><i class="fa fa-print"></i> Print</a>
                                 </div>
                                 <div class="col-md-4">
                                     <a href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised"><i class="fa fa-pencil"></i> Edit</a>
