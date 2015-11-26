@@ -310,24 +310,35 @@ select {
 .pagination {
 	list-style: none;
 	&>li {
-		border: 1px solid #000000;
 		float: left;
-		display: inline-block;
+		color: $primary;
 		padding: 4px 10px;
+		display: inline-block;
+		border: 1px solid $primary;
 	}
 	.active {
-			background: #000;
-			color: #FFF;
-			&>a{
-				color: #FFFFFF;
-			}
+		color: #FFF;
+		background: $primary;
+		&>a{
+			color: #FFFFFF;
 		}
-		.disabled {
+	}
+	.disabled {
+		color: #DDDDDD;
+		&>a {
 			color: #DDDDDD;
-			&>a {
-				color: #DDDDDD;
-			}
 		}
+	}
+	.left {
+		border-right: 0px;
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.right {
+		border-left: 0px;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
 }
 
 .discount-icon {

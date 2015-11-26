@@ -41,9 +41,9 @@
             $pagination .= "<ul class='pagination' style='margin: 0px;'>";
             //previous button
             if ($page > 1) 
-                $pagination.= "<li><a href='$targetpage?page=$prev'><</a></li>";
+                $pagination.= "<li class='left'><a href='$targetpage?page=$prev'><</a></li>";
             else
-                $pagination.= "<li class='disabled'><a href='#'><</a></li>"; 
+                $pagination.= "<li class='disabled left'><a href='#'><</a></li>"; 
             
             //pages 
             if ($lastpage < 7 + ($adjacents * 2))   //not enough pages to bother breaking it up
@@ -107,9 +107,9 @@
             
             //next button
             if ($page < $counter - 1) 
-                $pagination.= "<li><a href='$targetpage?page=$next'>></a></li>";
+                $pagination.= "<li class='right'><a href='$targetpage?page=$next'>></a></li>";
             else
-                $pagination.= "<li class='disabled'><a href='#'>></a></li>";
+                $pagination.= "<li class='disabled right'><a href='#'>></a></li>";
             $pagination.= "</ul>\n";       
         }
     
