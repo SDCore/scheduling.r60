@@ -105,10 +105,6 @@
 							<b>PSST!</b> Print.
 						</div>
 					</div>
-					<div class="card-footer">
-						<a class="button-flat right">View All</a>
-						<div class="clear"></div>
-					</div>
 				</div>
 			</div>
 		</div>
