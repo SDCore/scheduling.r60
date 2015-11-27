@@ -44,6 +44,34 @@
 											<center><img src="{$picture}" style="width: 100%;" /></center>
 										</div>
 									</div>
+									<hr>
+									<div class="row" style="text-align: center;">
+										<div class="col-md-4">
+											{$forecast[1]['day']}
+											<br />
+											High: {$forecast[1]['high']}&deg;F 
+											<br />
+											Low: {$forecast[1]['low']}&deg;F 
+										</div>
+										<div class="col-md-4">
+											{$forecast[2]['day']}
+											<br />
+											High: {$forecast[2]['high']}&deg;F 
+											<br />
+											Low: {$forecast[2]['low']}&deg;F 
+										</div>
+										<div class="col-md-4">
+											{$forecast[3]['day']}
+											<br />
+											High: {$forecast[3]['high']}&deg;F 
+											<br />
+											Low: {$forecast[3]['low']}&deg;F 
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<a href="http://www.weather.com/weather/today/l/60060:4:US" class="button-flat right" target="_blank">Full Report</a>
+									<div class="clear"></div>
 								</div>
 							</div>
 END;
