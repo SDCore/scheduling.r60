@@ -5,10 +5,64 @@
 	$thequery = "SELECT * FROM detail_tickets ORDER BY id DESC LIMIT 6";
 	$queryex = mysql_query($thequery);
 
-?>
+	$zipcode = "12783979";
+	$contents = file_get_contents('http://weather.yahooapis.com/forecastrss?w='.$zipcode.'&u=f');
+	$xml = simplexml_load_string($contents);
+	$xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
+	$location = $xml->channel->xpath('yweather:location');
+	if(!empty($location)){
+		foreach($xml->channel->item as $item) {
+			$current = $item->xpath('yweather:condition');
+			$forecast = $item->xpath('yweather:forecast');
+			$current = $current[0];
+			if($current['text'] == "Light Rain") {
+				$picture = "/assets/imgs/weather/light_rain_2_hdv2.png";
+			}elseif($current['text'] == "Fair") {
+				$picture = "/assets/imgs/weather/fair_hd.png";
+			}elseif($current['text'] == "Partly Cloudy") {
+				$picture = "/assets/imgs/weather/partly_cloudy_hd.png";
+			}elseif($current['text'] == "Fog") {
+				$picture = "/assets/imgs/weather/fogv2.png";
+			}elseif($current['text'] == "Cloudy") {
+				$picture = "/assets/imgs/weather/partly_cloudy_hdv2.png";
+			}else{
+				$picture = "/assets/imgs/weather/sunny_hdv2.png";
+			}
+			$output = <<<END
+							<div class="card">
+								<div class="card-title">{$location[0]['city']}, {$location[0]['region']}</div>
+								<div class="card-content">
+									Last Updated: {$current['date']}
+									<br /><br />
+									<div class="row">
+										<div class="col-sm-6" style="text-align: center; padding-top: 5%;">
+											<h1 style="margin: 0px; padding: 0px; font-size: 30pt;">{$current['temp']}&deg;F</h1>
+											<h2 style="text-align: center; margin: 0px; padding: 0px; font-size: 25pt; font-weight: 400;">{$current['text']}</h2>
+											<h3 style="text-align: center; margin: 0px; padding: 0px; font-size: 12pt; font-weight: 400;">High: {$forecast[0]['high']}&deg;F / Low: {$forecast[0]['low']}&deg;F
+										</div>
+										<div class="col-sm-6">
+											<center><img src="{$picture}" style="width: 100%;" /></center>
+										</div>
+									</div>
+								</div>
+							</div>
+END;
+		}
+	}else{
+	    $output = '<font style="font-size: 18px;">Location not found. Try a different WOEID.</font>';
+	}
+
+	?>
 
 	<div class="container">
-		<h2 class="welcome">Welcome, Route 60!</h2>
+		<h2 class="welcome">Welcome,
+			<?php
+				if(logged_in() === true) {
+					echo $user_data['description'];
+				}else{
+					echo "Guest";
+				}
+			?>!</h2>
 
 		<div class="row">
 			<div class="col-md-8">
@@ -98,6 +152,10 @@
 			</div>
 
 			<div class="col-md-4">
+				<?php echo $output; ?>
+			</div>
+
+			<!-- <div class="col-md-4">
 				<div class="card">
 					<div class="card-title">Notifications</div>
 					<div class="card-content">
@@ -106,7 +164,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 	</div>

@@ -33,7 +33,7 @@
 			<div class="brand">
 				<?php
 					if(logged_in() === true) {
-						echo "Route 60";
+						echo $user_data['description'];
 					}else{
 						echo "Guest";
 					}
