@@ -133,7 +133,6 @@
                 <ol>
                     <li>Full Service Wash</li>
                     <li>Claybar Treatment</li>
-                    <li>Hand Wash</li>
                 </ol>
             ";
         }
