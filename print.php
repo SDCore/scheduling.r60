@@ -198,7 +198,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."</span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -240,7 +240,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."</span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -282,7 +282,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."</span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
