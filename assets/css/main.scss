@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,500italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
 
 $darkprimary: #1976D2;
 $primary: #2196F3;
@@ -351,4 +352,9 @@ select {
 		background-position: 2px 14px;
 		background-repeat: no-repeat;
 	}
+}
+
+.theoption {
+	font-size: 18pt;
+	font-family: "Titillium Web", Arial, sans-serif, Helvetica;
 }

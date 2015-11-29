@@ -180,12 +180,10 @@
             ";
         }
         
-        if($options == 'Paid') {
-            $option = "<span style='color: #E14747; font-weight: bold;'>Paid</span>";
-        }elseif($options == 'Prepaid') {
+        if($options == 'Prepaid') {
             $option = "<span style='color: #E14747; font-weight: bold;'>Prepaid</span>";
-        }elseif($options == 'Completed') {
-            $option = "<span style='color: #20B473; font-weight: bold;'>Completed</span>";
+        }elseif($options == 'Paid/Completed') {
+            $option = "<span style='color: #20B473; font-weight: bold;'>Paid/Completed</span>";
         }elseif($options == 'Appointment') {
             $option = "<span style='color: #FFC017; font-weight: bold;'>Appointment</span>";
         }
@@ -197,7 +195,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -239,7 +237,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -281,7 +279,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 25%; display: inline-block;'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">

@@ -175,12 +175,10 @@
             ";
         }
         
-        if($options == 'Paid') {
-            $option = "<center><h3 style='color: #E14747;'>Paid</h3></center>";
-        }elseif($options == 'Prepaid') {
+        if($options == 'Prepaid') {
             $option = "<center><h3 style='color: #E14747;'>Prepaid</h3></center>";
-        }elseif($options == 'Completed') {
-            $option = "<center><h3 style='color: #20B473;'>Completed</h3></center>";
+        }elseif($options == 'Paid/Completed') {
+            $option = "<center><h3 style='color: #20B473;'>Paid/Completed</h3></center>";
         }elseif($options == 'Appointment') {
             $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
         }
@@ -198,6 +196,12 @@
                         <p><b>Phone Number:</b> <?php echo $pnumber; ?>
                         <br />
                         <b>Date:</b> <?php echo $date; ?>
+                        <br />
+                        <b>Vehicle Make:</b> <?php echo $vmake; ?>
+                        <br />
+                        <b>Vehicle Model:</b> <?php echo $vmodel; ?>
+                        <br />
+                        <b>Vehicle Color:</b> <?php echo $vcolor; ?>
                         <br />
                         <b>Notes:</b> <?php echo $notes; ?></p>
                         <p><?php echo $option; ?></p>

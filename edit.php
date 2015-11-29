@@ -194,13 +194,10 @@
             $active11 = "selected";
         }
         
-        if($options == 'Paid') {
-            $option = "<center><h3 style='color: #E14747;'>Paid</h3></center>";
-            $oa1 = "selected";
-        }elseif($options == 'Prepaid') {
+        if($options == 'Prepaid') {
             $option = "<center><h3 style='color: #E14747;'>Prepaid</h3></center>";
             $oa2 = "selected";
-        }elseif($options == 'Completed') {
+        }elseif($options == 'Paid/Completed') {
             $option = "<center><h3 style='color: #20B473;'>Completed</h3></center>";
             $oa3 = "selected";
         }elseif($options == 'Appointment') {
@@ -287,10 +284,9 @@
 	                        </div>
 	                        <div class="col-md-4">
 	                            <select name="optionsselect" id="optionsselect">
-	                                <option value="Paid" <?php if(isset($oa1)) {echo $oa1; } ?>>Paid</option>
 	                                <option value="Prepaid" <?php if(isset($oa2)) {echo $oa2; } ?>>Prepaid</option>
                                     <option value="Appointment" <?php if(isset($oa4)) { echo $oa4; } ?>>Appointment</option>
-	                                <option value="Completed" <?php if(isset($oa3)) { echo $oa3; } ?>>Completed</option>
+	                                <option value="Paid/Completed" <?php if(isset($oa3)) { echo $oa3; } ?>>Paid/Completed</option>
 	                            </select>
 	                        </div>
 	                    </div>

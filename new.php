@@ -84,9 +84,8 @@
 			        <div class="col-md-4">
 			        	<select name="optionsselect" id="optionsselect">
 			                <option value="Prepaid">Prepaid</option>
-			                <option value="Paid">Paid</option>
 			                <option value="Appointment">Appointment</option>
-			                <option value="Completed">Completed</option>
+			                <option value="Paid/Completed">Paid/Completed</option>
 			            </select>
 			        </div>
 			    </div>

@@ -17,7 +17,7 @@
         
         /* Setup vars for query. */
         $targetpage = "tickets";   //your file name  (the name of this file)
-        $limit = 10;                                 //how many items to show per page
+        $limit = 15;                                 //how many items to show per page
         $page = $_GET['page'];
         if($page) 
             $start = ($page - 1) * $limit;          //first item to display on this page
@@ -179,11 +179,9 @@
                                         $servicetitle = "Hand Wash - SUV w/ Full Service";
                                     }
 			                        
-			                        if($options == 'Paid') {
+			                        if($options == 'Prepaid') {
 			                            $option = "<center><h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6></center>";
-			                        }elseif($options == 'Prepaid') {
-			                            $option = "<center><h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6></center>";
-			                        }elseif($options == 'Completed') {
+			                        }elseif($options == 'Paid/Completed') {
 			                            $option = "<center><h6 style='color: #20B473; margin: 0px; font-size: 20px;'>&check;</h6></center>";
 			                        }elseif($options == 'Appointment') {
                                         $option = "<center><h6 style='color: #FFC017; margin: 0px; font-size: 20px;'><i class='fa fa-clock-o'></i></h6></center>";
