@@ -259,6 +259,48 @@ td {
 	}
 }
 
+.disabled {
+	width: 100%;
+	border: none;
+	color: #FFFFFF;
+	font-weight: 500;
+	padding: 8px 20px;
+	text-align: center;
+	border-radius: 2px;
+	background: $primary;
+	display: inline-block;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+	&:hover {
+		color: #FFFFFF;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+	}
+	&:focus {
+		color: #FFFFFF;
+		text-decoration: none;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+	}
+	&[disabled] {
+		color: #DDDDDD;
+		background: #999999;
+		pointer-events: none;
+	}
+	&.delete {
+		background: #E14747;
+	}
+	&.print {
+		background: #20B473;
+	}
+}
+
+[disabled] {
+	color: #DDDDDD;
+	background: #999999;
+	pointer-events: none;
+}
+
 input[type='text'] {
 	width: 100%;
     border: none;

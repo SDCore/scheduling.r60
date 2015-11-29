@@ -178,9 +178,16 @@
         if($options == 'Prepaid') {
             $option = "<center><h3 style='color: #E14747;'>Prepaid</h3></center>";
         }elseif($options == 'Paid/Completed') {
+            $ccompleted = "ccompleted";
             $option = "<center><h3 style='color: #20B473;'>Paid/Completed</h3></center>";
         }elseif($options == 'Appointment') {
             $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
+        }
+
+        if(isset($ccompleted)) {
+            $cdisabled = 'disabled="disabled" class="disabled"';
+        }else{
+            $cdisabled = '';
         }
         
         $totalprice = $serviceprice - $discount;
@@ -211,10 +218,10 @@
                                     <a href="<?php echo $site; ?>/print?id=<?php echo $ticket_id; ?>" target="_blank" class="button-raised print"><i class="fa fa-print"></i> Print</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised"><i class="fa fa-pencil"></i> Edit</a>
+                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised"><i class="fa fa-pencil"></i> Edit</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/deleteticket?id=<?php echo $ticket_id; ?>" class="button-raised delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/deleteticket?id=<?php echo $ticket_id; ?>" class="button-raised delete"><i class="fa fa-trash-o"></i> Delete</a>
                                 </div>
                             </div>
                         </p>
