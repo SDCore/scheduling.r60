@@ -82,8 +82,7 @@
                     <li>Shampoo all carpeting</li>
                     <li>Shampoo all door panels</li>
                     <li>Seats cleaned and conditioned</li>
-                    <li>Dashboard cleaned and conditioned</li>
-                    <li>All glass cleaned and polished</li>
+                    <li>Dashboard/glass cleaned and polished</li>
                 </ol>
             ";
         }
@@ -126,8 +125,7 @@
                     <li>Shampoo all carpeting</li>
                     <li>Shampoo all door panels</li>
                     <li>Seats cleaned & conditioned</li>
-                    <li>Dashboard cleaned & conditioned</li>
-                    <li>All glass cleaned and polished</li>
+                    <li>Dashboard/glass cleaned and polished</li>
                 </ol>
             ";
         }
@@ -195,7 +193,7 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -234,10 +232,10 @@
             </div>
         </div>
     </div>
-    <div class="print-container">
+    <div class="print-container" style="margin-top: 27px;">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
@@ -276,10 +274,10 @@
             </div>
         </div>
     </div>
-    <div class="print-container">
+    <div class="print-container" style="margin-top: 33px;">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
             </div>
             <hr>
             <div class="card-content">
