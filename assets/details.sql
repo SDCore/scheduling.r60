@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.11
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Nov 25, 2015 at 10:30 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.9
+-- Host: 127.0.0.1
+-- Generation Time: Dec 05, 2015 at 09:43 PM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -42,18 +42,26 @@ CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `ticket_id` varchar(32) NOT NULL,
   `notes` text NOT NULL,
   `ticket_creator` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detail_tickets`
 --
 
 INSERT INTO `detail_tickets` (`id`, `first_name`, `last_name`, `phone_number`, `date`, `vehicle_make`, `vehicle_model`, `vehicle_color`, `discount`, `services`, `pre_paid_done`, `user_id`, `ticket_id`, `notes`, `ticket_creator`) VALUES
-(1, 'John', 'Smith', '555-555-5555', '2015-10-24', 'Dodge', 'Durango', 'Blue', 25, '1', 'Paid', '1', '1', '', 'Jeff V'),
-(2, 'Smithgggg', 'Johnffff', '444-444-5555', '2015-10-23', 'Durangopppp', 'Dodgeeeee', 'Reddddd', 10, '6', 'Paid', '1', '2', 'THIS IS A NOTEeeeeee', 'Michael V'),
-(3, 'Jawn', 'Smiffinhimer', '122-333-4444', '2015-10-24', 'Dawdge', 'Duranger', 'Blargh', 0, '3', 'Completed', '1', '31526862.860153', 'Blermhim none ', 'Michael V'),
-(4, 'Michael', '', '123132123', '2015-11-05', '23123', '1231231', '23123123', 2131, '3', 'Completed', '1', '10636874.303285', 'Notes.', 'Michael V'),
-(5, 'Max', 'Caulfield', '555-555-1263', '2015-11-07', 'Dodge', 'Durango', 'Blue', 0, '6', 'Completed', '1', '245289158.5846', 'Note.', 'Michael Voell');
+(4, 'Michael', 'Voell', '608-302-9226', '2015-10-25', 'Dodge', 'Durango', 'Blue', 19, '3', 'Paid/Completed', '1', '308684574.38732', 'Commission: Jeff Voell', 'Person'),
+(5, 'Jeff', 'Voell', '6088441263', '2015-10-25', 'Hummer ', 'H2', 'Champagine', 0, '7', 'Paid/Completed', '1', '131002580.1566', '', 'Person'),
+(8, 'CJ', '', '6087181873', '2015-11-07', 'kia', 'sportage', 'green', 0, '6', 'Paid/Completed', '1', '47526268.589997', '', 'jeff'),
+(10, 'Paul', '', '8477028240', '2015-11-14', 'Lexus', 'rx350', 'champange', 0, '7', 'Paid/Completed', '1', '238796262.33603', 'wipe down trim, appt 930 am', 'Jeff'),
+(11, 'Cathy', '', '8478332928', '2015-12-08', 'Ford', 'Explorer', 'White', 0, '6', 'Appointment', '1', '72720500.846108', 'appt on 12/2/2015', 'Jeff'),
+(12, 'Michael', '', '847-791-2075', '2015-11-14', 'Nissan', 'Sentra', 'Grey', -1, '1', 'Paid/Completed', '1', '57591808.973886', 'Add basic car wash $1.00', 'Jeff'),
+(13, 'Randy', '', '319-290-0856', '2015-11-14', 'Ford', 'flex', 'blue', 119, '6', 'Paid/Completed', '1', '23214188.82702', '', 'Jeff'),
+(14, 'Mike', '', '847-367-6473', '2015-11-15', 'Buick', 'Enclave', 'White', 0, '7', 'Paid/Completed', '1', '191037526.17754', 'call when done', 'Jeff'),
+(15, 'Frank', '', '6085560529', '2015-11-28', 'Acura', 'MDX', 'Silver', 15, '7', 'Paid/Completed', '1', '330093988.67737', '', 'Jeff'),
+(16, 'Frank', '', '6085560529', '2015-11-28', 'Audi', 'Q7', 'White', 15, '7', 'Paid/Completed', '1', '38041776.14066', '', 'Jeff'),
+(17, 'jennifer', 'Waugh', '8474776428', '2015-11-29', 'Honda', 'Pilot', 'Red', 35, '7', 'Paid/Completed', '1', '234369632.66621', '', 'Jeff'),
+(18, 'Jennifer', 'Waugh', '8474776428', '2015-11-29', 'Pontiac', 'G6', 'Blue', 35, '7', 'Paid/Completed', '1', '311794124.26014', '', 'Jeff'),
+(20, 'Tony', 'Vardin', '8478782921', '2015-12-01', 'toyota', 'salara', 'beige', 29, '3', 'Paid/Completed', '1', '53265546.737557', '', 'Jeff');
 
 -- --------------------------------------------------------
 
@@ -79,7 +87,8 @@ CREATE TABLE IF NOT EXISTS `detail_users` (
 --
 
 INSERT INTO `detail_users` (`user_id`, `username`, `password`, `email`, `avatar`, `description`, `power_rank`, `active`, `type`, `dob`) VALUES
-(1, 'route60admin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'sdcored@gmail.com', 'http://i.imgur.com/GD9pndo.png', 'Route 60', '3', 1, 'Admin', '2015-05-19 20:00:00');
+(1, 'route60admin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'sdcored@gmail.com', 'http://i.imgur.com/GD9pndo.png', 'Route 60', '3', 1, 'Admin', '2015-05-19 20:00:00'),
+(2, 'lakecookadmin', '2c2f3a1488d25d0b9a8b2884b64f768be0ae10595223f6d775d3ee3f20042741d2d3f21ed31448e17969f75e09728523ba8a0d7bce17222cdf8dfd205a9118ba', 'sdcored@gmail.com', 'http://placehold.it/300x300', 'Lake Cook', '3\r\n', 1, 'Admin', '2015-12-05 20:39:30');
 
 --
 -- Indexes for dumped tables
@@ -105,7 +114,7 @@ ALTER TABLE `detail_users`
 -- AUTO_INCREMENT for table `detail_tickets`
 --
 ALTER TABLE `detail_tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
