@@ -17,7 +17,19 @@
 		<a href="<?php echo $site; ?>" class="brand">Detail Manager</a>
 
 		<div class="right">
-			<a href="#" class="navigation"><i class="fa fa-cog"></i></a>
+			<?php
+
+				if(logged_in() === true) {
+					if($user_data['username'] == "route60admin") {
+						echo '<a href="'.$site.'/settings" class="navigation"><i class="fa fa-cog"></i></a>';
+					}else{
+						echo '';
+					}
+				}else{
+					echo '';
+				}
+
+			?>
 			<?php
 				if(logged_in() === true) {
 					echo '<a href="/signout" class="navigation"><i class="fa fa-power-off"></i> Sign Out</a>';
