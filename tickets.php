@@ -128,6 +128,7 @@
 
 							<thead>
 								<tr>
+                                    <th>Locked</th>
 									<th>Name</th>
 									<th>Date</th>
 									<th>Detail</th>
@@ -187,7 +188,14 @@
                                         $option = "<center><h6 style='color: #FFC017; margin: 0px; font-size: 20px;'><i class='fa fa-clock-o'></i></h6></center>";
                                     }
 
+                                    if($row['locked'] == 0) {
+                                        $locking = "<i class='fa fa-unlock'></i>";
+                                    }elseif($row['locked'] == 1) {
+                                        $locking = "<i class='fa fa-lock'></i>";
+                                    }
+
 			                        echo '<tr>';
+                                    echo '<td>'.$locking.'</td>';
 			                        echo '<td><a href="'.$site.'/ticket?id='.$row['ticket_id'].'">'.$row['first_name'].' '.$row['last_name'].'</a></td>';
 			                        echo '<td>'.$row['date'].'</td>';
 			                        echo '<td>'.$servicetitle.'</td>';
