@@ -28,6 +28,13 @@
             $ticket_id = $row['ticket_id'];
             $notes = $row['notes'];
             $tcreator = $row['ticket_creator'];
+            $lock = $row['locked'];
+        }
+
+        if($lock == 0) {
+            $cdisabled = '';
+        }elseif($lock == 1) {
+            $cdisabled = 'disabled="disabled" class="disabled"';
         }
         
         if($services == 'wax'){
@@ -182,12 +189,6 @@
             $option = "<center><h3 style='color: #20B473;'>Paid/Completed</h3></center>";
         }elseif($options == 'Appointment') {
             $option = "<center><h3 style='color: #FFC017;'>Appointment</h3></center>";
-        }
-
-        if(isset($ccompleted)) {
-            $cdisabled = 'disabled="disabled" class="disabled"';
-        }else{
-            $cdisabled = '';
         }
         
         $totalprice = $serviceprice - $discount;

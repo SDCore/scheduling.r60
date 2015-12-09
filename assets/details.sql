@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2015 at 09:43 PM
+-- Generation Time: Dec 10, 2015 at 12:20 AM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `id` int(11) NOT NULL,
+  `locked` int(11) NOT NULL DEFAULT '0',
   `first_name` text NOT NULL,
   `last_name` text NOT NULL,
   `phone_number` varchar(32) NOT NULL,
@@ -42,26 +43,33 @@ CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `ticket_id` varchar(32) NOT NULL,
   `notes` text NOT NULL,
   `ticket_creator` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detail_tickets`
 --
 
-INSERT INTO `detail_tickets` (`id`, `first_name`, `last_name`, `phone_number`, `date`, `vehicle_make`, `vehicle_model`, `vehicle_color`, `discount`, `services`, `pre_paid_done`, `user_id`, `ticket_id`, `notes`, `ticket_creator`) VALUES
-(4, 'Michael', 'Voell', '608-302-9226', '2015-10-25', 'Dodge', 'Durango', 'Blue', 19, '3', 'Paid/Completed', '1', '308684574.38732', 'Commission: Jeff Voell', 'Person'),
-(5, 'Jeff', 'Voell', '6088441263', '2015-10-25', 'Hummer ', 'H2', 'Champagine', 0, '7', 'Paid/Completed', '1', '131002580.1566', '', 'Person'),
-(8, 'CJ', '', '6087181873', '2015-11-07', 'kia', 'sportage', 'green', 0, '6', 'Paid/Completed', '1', '47526268.589997', '', 'jeff'),
-(10, 'Paul', '', '8477028240', '2015-11-14', 'Lexus', 'rx350', 'champange', 0, '7', 'Paid/Completed', '1', '238796262.33603', 'wipe down trim, appt 930 am', 'Jeff'),
-(11, 'Cathy', '', '8478332928', '2015-12-08', 'Ford', 'Explorer', 'White', 0, '6', 'Appointment', '1', '72720500.846108', 'appt on 12/2/2015', 'Jeff'),
-(12, 'Michael', '', '847-791-2075', '2015-11-14', 'Nissan', 'Sentra', 'Grey', -1, '1', 'Paid/Completed', '1', '57591808.973886', 'Add basic car wash $1.00', 'Jeff'),
-(13, 'Randy', '', '319-290-0856', '2015-11-14', 'Ford', 'flex', 'blue', 119, '6', 'Paid/Completed', '1', '23214188.82702', '', 'Jeff'),
-(14, 'Mike', '', '847-367-6473', '2015-11-15', 'Buick', 'Enclave', 'White', 0, '7', 'Paid/Completed', '1', '191037526.17754', 'call when done', 'Jeff'),
-(15, 'Frank', '', '6085560529', '2015-11-28', 'Acura', 'MDX', 'Silver', 15, '7', 'Paid/Completed', '1', '330093988.67737', '', 'Jeff'),
-(16, 'Frank', '', '6085560529', '2015-11-28', 'Audi', 'Q7', 'White', 15, '7', 'Paid/Completed', '1', '38041776.14066', '', 'Jeff'),
-(17, 'jennifer', 'Waugh', '8474776428', '2015-11-29', 'Honda', 'Pilot', 'Red', 35, '7', 'Paid/Completed', '1', '234369632.66621', '', 'Jeff'),
-(18, 'Jennifer', 'Waugh', '8474776428', '2015-11-29', 'Pontiac', 'G6', 'Blue', 35, '7', 'Paid/Completed', '1', '311794124.26014', '', 'Jeff'),
-(20, 'Tony', 'Vardin', '8478782921', '2015-12-01', 'toyota', 'salara', 'beige', 29, '3', 'Paid/Completed', '1', '53265546.737557', '', 'Jeff');
+INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_number`, `date`, `vehicle_make`, `vehicle_model`, `vehicle_color`, `discount`, `services`, `pre_paid_done`, `user_id`, `ticket_id`, `notes`, `ticket_creator`) VALUES
+(4, 1, 'Michael', 'Voell', '608-302-9226', '2015-10-25', 'Dodge', 'Durango', 'Blue', 19, '3', 'Paid/Completed', '1', '308684574.38732', 'Commission: Jeff Voell', 'Person'),
+(5, 1, 'Jeff', 'Voell', '6088441263', '2015-10-25', 'Hummer ', 'H2', 'Champagine', 0, '7', 'Paid/Completed', '1', '131002580.1566', '', 'Person'),
+(8, 1, 'CJ', '', '6087181873', '2015-11-07', 'kia', 'sportage', 'green', 0, '6', 'Paid/Completed', '1', '47526268.589997', '', 'jeff'),
+(10, 1, 'Paul', '', '8477028240', '2015-11-14', 'Lexus', 'rx350', 'champange', 0, '7', 'Paid/Completed', '1', '238796262.33603', 'wipe down trim, appt 930 am', 'Jeff'),
+(11, 0, 'Cathy', '', '8478332928', '2015-12-08', 'Ford', 'Explorer', 'White', 0, '6', 'Appointment', '1', '72720500.846108', 'appt on 12/2/2015', 'Jeff'),
+(12, 1, 'Michael', '', '847-791-2075', '2015-11-14', 'Nissan', 'Sentra', 'Grey', -1, '1', 'Paid/Completed', '1', '57591808.973886', 'Add basic car wash $1.00', 'Jeff'),
+(13, 1, 'Randy', '', '319-290-0856', '2015-11-14', 'Ford', 'flex', 'blue', 119, '6', 'Paid/Completed', '1', '23214188.82702', '', 'Jeff'),
+(14, 1, 'Mike', '', '847-367-6473', '2015-11-15', 'Buick', 'Enclave', 'White', 0, '7', 'Paid/Completed', '1', '191037526.17754', 'call when done', 'Jeff'),
+(15, 1, 'Frank', '', '6085560529', '2015-11-28', 'Acura', 'MDX', 'Silver', 15, '7', 'Paid/Completed', '1', '330093988.67737', '', 'Jeff'),
+(16, 1, 'Frank', '', '6085560529', '2015-11-28', 'Audi', 'Q7', 'White', 15, '7', 'Paid/Completed', '1', '38041776.14066', '', 'Jeff'),
+(17, 1, 'jennifer', 'Waugh', '8474776428', '2015-11-29', 'Honda', 'Pilot', 'Red', 35, '7', 'Paid/Completed', '1', '234369632.66621', '', 'Jeff'),
+(18, 1, 'Jennifer', 'Waugh', '8474776428', '2015-11-29', 'Pontiac', 'G6', 'Blue', 35, '7', 'Paid/Completed', '1', '311794124.26014', '', 'Jeff'),
+(20, 1, 'Tony', 'Vardin', '8478782921', '2015-12-01', 'toyota', 'salara', 'beige', 29, '3', 'Paid/Completed', '1', '53265546.737557', '', 'Jeff'),
+(21, 1, 'Lisa', 'Lorenzi', '8472077424', '2015-12-06', 'Chevy', 'Sonic', 'White', 0, '3', 'Paid/Completed', '1', '287102590.00266', '', 'Jeff'),
+(22, 1, 'Lisa', 'Lorenzi', '8472077424', '2015-12-06', 'Chevy', 'Sonic', 'White', 39, '3', 'Paid/Completed', '1', '84538906.275294', '', 'Jeff'),
+(23, 1, 'Staci', 'Hetlinger', '8476120369', '2015-12-06', 'Mitsubishi', 'Outlander', 'Grey', 59, '5', 'Paid/Completed', '1', '188073238.83572', 'Take off paint, tar, and minor paint transfer drivers side', 'Jeff'),
+(24, 1, 'Glen', 'Mikolajczak', '8475078779', '2015-12-06', 'Jeep', 'Grand cherokee', 'Black', 0, '7', 'Paid/Completed', '1', '58278514.473546', '', 'Jeff'),
+(25, 1, 'mariann', '', '8475667444', '2015-12-08', 'Chevy', 'Equanox', 'Black', 35, '7', 'Paid/Completed', '1', '235123250.26633', '', 'Jeff'),
+(26, 0, 'Test', 'COMPLETED = 1', '123123123', '2015-12-09', 'asd', 'asd', 'asd', 1, 'wax', 'Paid/Completed', '1', '161701040.84984', 'Please keep this until further notice, testing the new ', 'MVoell'),
+(27, 0, 'TEST', 'LOCK COMPLETED = 0', 'asd', '2015-12-09', 'asd', 'asd', 'asd', 0, 'wax', 'Prepaid', '1', '289346716.53963', 'Please keep this until further notice, testing the new "Lock" feature.', 'MVoell');
 
 -- --------------------------------------------------------
 
@@ -114,7 +122,15 @@ ALTER TABLE `detail_users`
 -- AUTO_INCREMENT for table `detail_tickets`
 --
 ALTER TABLE `detail_tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+DELIMITER $$
+--
+-- Events
+--
+CREATE DEFINER=`root`@`localhost` EVENT `Lock_Em_Up` ON SCHEDULE EVERY 1 DAY STARTS '2015-12-08 22:00:00' ON COMPLETION PRESERVE ENABLE COMMENT 'Makes tickets that are "Paid/Completed" locked at 10PM nightly.' DO UPDATE detail_tickets SET locked=1 WHERE pre_paid_done = "Paid/Completed"$$
+
+DELIMITER ;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
