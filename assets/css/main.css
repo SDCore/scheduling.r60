@@ -297,10 +297,14 @@ select {
     background: #2196F3; }
     .pagination .active > a {
       color: #FFFFFF; }
-  .pagination .disabled {
-    color: #DDDDDD; }
-    .pagination .disabled > a {
-      color: #DDDDDD; }
+  .pagination .disabledpage {
+    float: left;
+    color: #DDDDDD;
+    background: #FFFFFF;
+    pointer-events: none; }
+    .pagination .disabledpage > a {
+      color: #DDDDDD;
+      background: #FFFFFF; }
   .pagination .left {
     border-right: 0px;
     border-top-left-radius: 2px;

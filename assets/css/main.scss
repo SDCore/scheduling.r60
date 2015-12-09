@@ -367,10 +367,14 @@ select {
 			color: #FFFFFF;
 		}
 	}
-	.disabled {
+	.disabledpage {
+		float: left;
 		color: #DDDDDD;
+		background: #FFFFFF;
+		pointer-events: none;
 		&>a {
 			color: #DDDDDD;
+			background: #FFFFFF;
 		}
 	}
 	.left {
