@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2015 at 12:20 AM
+-- Generation Time: Dec 16, 2015 at 10:25 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `ticket_id` varchar(32) NOT NULL,
   `notes` text NOT NULL,
   `ticket_creator` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detail_tickets`
@@ -68,8 +68,8 @@ INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_
 (23, 1, 'Staci', 'Hetlinger', '8476120369', '2015-12-06', 'Mitsubishi', 'Outlander', 'Grey', 59, '5', 'Paid/Completed', '1', '188073238.83572', 'Take off paint, tar, and minor paint transfer drivers side', 'Jeff'),
 (24, 1, 'Glen', 'Mikolajczak', '8475078779', '2015-12-06', 'Jeep', 'Grand cherokee', 'Black', 0, '7', 'Paid/Completed', '1', '58278514.473546', '', 'Jeff'),
 (25, 1, 'mariann', '', '8475667444', '2015-12-08', 'Chevy', 'Equanox', 'Black', 35, '7', 'Paid/Completed', '1', '235123250.26633', '', 'Jeff'),
-(26, 0, 'Test', 'COMPLETED = 1', '123123123', '2015-12-09', 'asd', 'asd', 'asd', 1, 'wax', 'Paid/Completed', '1', '161701040.84984', 'Please keep this until further notice, testing the new ', 'MVoell'),
-(27, 0, 'TEST', 'LOCK COMPLETED = 0', 'asd', '2015-12-09', 'asd', 'asd', 'asd', 0, 'wax', 'Prepaid', '1', '289346716.53963', 'Please keep this until further notice, testing the new "Lock" feature.', 'MVoell');
+(28, 1, 'Scott', 'Huckis', '8478630272', '2015-12-12', 'Nissan', 'Armada', 'Black', 15, '7', 'Paid/Completed', '1', '149748810.15539', 'Full service', 'Jeff'),
+(29, 1, 'Rich', '', '8154058865', '2015-12-15', 'Toyota', 'Camary', 'Black', 39, '3', 'Paid/Completed', '1', '281358022.03024', '', 'Jeff');
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ ALTER TABLE `detail_users`
 -- AUTO_INCREMENT for table `detail_tickets`
 --
 ALTER TABLE `detail_tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=30;
 DELIMITER $$
 --
 -- Events
