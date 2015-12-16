@@ -207,39 +207,6 @@
 							?>
 
 							</tbody>
-
-							<!-- <tbody>
-								<tr>
-									<td><a href="#">John Smith</a></td>
-									<td>9/23/2015</td>
-									<td>#1</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td><a href="#">John Hurt</a></td>
-									<td>9/23/2015</td>
-									<td>#6</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td><a href="#">John Smith</a></td>
-									<td>9/23/2015</td>
-									<td>#1</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td><a href="#">John Hurt</a></td>
-									<td>9/23/2015</td>
-									<td>#6</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td><a href="#">John Smith</a></td>
-									<td>9/23/2015</td>
-									<td>#1</td>
-									<td>No</td>
-								</tr>
-							</tbody> -->
 						</table>
 					</div>
 					<div class="card-footer">
