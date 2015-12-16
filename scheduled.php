@@ -16,7 +16,7 @@
         $total_pages = $total_pages[0];
         
         /* Setup vars for query. */
-        $targetpage = "tickets";   //your file name  (the name of this file)
+        $targetpage = "scheduled";   //your file name  (the name of this file)
         $limit = 15;                                 //how many items to show per page
         $page = $_GET['page'];
         if($page) 
@@ -26,7 +26,7 @@
         
         /* Get data. */
         $uid = $user_data['user_id'];
-        $sql = "SELECT * FROM $tbl_name ORDER BY id DESC LIMIT $start, $limit";
+        $sql = "SELECT * FROM $tbl_name WHERE `pre_paid_done` = 'Appointment' ORDER BY id DESC LIMIT $start, $limit";
         $result2 = mysql_query($sql);
         
         /* Setup page vars for display. */
