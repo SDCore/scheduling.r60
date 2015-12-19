@@ -212,10 +212,10 @@
     				<br /><br />
     				<div class="row">
     					<div class="col-md-6">
-    						<a href="<?php echo $site; ?>/deleteconfirm?id=<?php echo $ticket_id; ?>" class="button-raised">Yes</a>
+    						<a href="<?php echo $site; ?>/deleteconfirm?id=<?php echo $ticket_id; ?>" class="button-raised el-2">Yes</a>
     					</div>
     					<div class="col-md-6">
-    						<a href="<?php echo $site; ?>/ticket?id=<?php echo $ticket_id; ?>" class="button-raised">No</a>
+    						<a href="<?php echo $site; ?>/ticket?id=<?php echo $ticket_id; ?>" class="button-raised el-2">No</a>
     					</div>
     				</div>
     			</p>

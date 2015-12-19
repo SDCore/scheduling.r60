@@ -204,6 +204,10 @@ td {
     background: #E14747; }
   .button-raised.print {
     background: #20B473; }
+  .button-raised.el-2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37); }
+    .button-raised.el-2:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.38); }
 
 .disabled {
   width: 100%;

@@ -54,7 +54,7 @@
 						<form action="" method="POST">
 							<input id="username" name="username" type="text" class="input" required="required" placeholder="Username">
 							<input id="password" name="password" type="password" class="input" required="required" placeholder="Password">
-							<input type="submit" name="signinbutton" id="signinbutton" class="button-raised" value="Sign In" style="width: 100%; margin-top: 4px; margin-bottom: 4px;" />
+							<input type="submit" name="signinbutton" id="signinbutton" class="button-raised el-2" value="Sign In" style="width: 100%; margin-top: 4px; margin-bottom: 4px;" />
 						</form>
 					</div>
 				</div>

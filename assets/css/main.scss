@@ -257,6 +257,12 @@ td {
 	&.print {
 		background: #20B473;
 	}
+	&.el-2 {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+		&:hover {
+			box-shadow: 0 6px 10px rgba(0, 0, 0, 0.38);
+		}
+	}
 }
 
 .disabled {

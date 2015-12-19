@@ -299,7 +299,7 @@
 	                        </div>
 
 	                        <div class="col-md-12">
-	                            <input type="submit" name="updateticket" id="updateticket" class="button-raised" value="Update Ticket" />
+	                            <input type="submit" name="updateticket" id="updateticket" class="button-raised el-2" value="Update Ticket" />
 	                        </div>
                         </div>
                     </form>

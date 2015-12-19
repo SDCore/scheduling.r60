@@ -216,13 +216,13 @@
                         <p>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/print?id=<?php echo $ticket_id; ?>" target="_blank" class="button-raised print"><i class="fa fa-print"></i> Print</a>
+                                    <a href="<?php echo $site; ?>/print?id=<?php echo $ticket_id; ?>" target="_blank" class="button-raised print el-2"><i class="fa fa-print"></i> Print</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised"><i class="fa fa-pencil"></i> Edit</a>
+                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised el-2"><i class="fa fa-pencil"></i> Edit</a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/deleteticket?id=<?php echo $ticket_id; ?>" class="button-raised delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                    <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/deleteticket?id=<?php echo $ticket_id; ?>" class="button-raised delete el-2"><i class="fa fa-trash-o"></i> Delete</a>
                                 </div>
                             </div>
                         </p>
