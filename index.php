@@ -47,27 +47,38 @@
 										</div>
 									</div>
 									<hr>
-									<div class="row" style="text-align: center;">
-										<div class="col-md-4">
+									<div class="row">
+										<div class="col-md-12">
 											{$forecast[1]['day']}
-											<br />
-											High: {$forecast[1]['high']}&deg;F 
-											<br />
-											Low: {$forecast[1]['low']}&deg;F 
+											<span style="float: right;">
+												High: {$forecast[1]['high']}&deg;F
+												 / 
+												Low: {$forecast[1]['low']}&deg;F
+											</span> 
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-12">
 											{$forecast[2]['day']}
-											<br />
-											High: {$forecast[2]['high']}&deg;F 
-											<br />
-											Low: {$forecast[2]['low']}&deg;F 
+											<span style="float: right;">
+												High: {$forecast[2]['high']}&deg;F
+												 / 
+												Low: {$forecast[2]['low']}&deg;F
+											</span>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-12">
 											{$forecast[3]['day']}
-											<br />
-											High: {$forecast[3]['high']}&deg;F 
-											<br />
-											Low: {$forecast[3]['low']}&deg;F 
+											<span style="float: right;">
+												High: {$forecast[3]['high']}&deg;F 
+												 / 
+												Low: {$forecast[3]['low']}&deg;F
+											</span>
+										</div>
+										<div class="col-md-12">
+											{$forecast[4]['day']}
+											<span style="float: right;">
+												High: {$forecast[4]['high']}&deg;F 
+												 / 
+												Low: {$forecast[4]['low']}&deg;F
+											</span>
 										</div>
 									</div>
 								</div>

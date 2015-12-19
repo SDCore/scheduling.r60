@@ -16,7 +16,7 @@
         $options = $_POST['optionsselect'];
         $user_id = $user_data['user_id'];
         $services = $_POST['serviceselect'];
-        $ticketid = microtime() + floor(rand()*10000) + floor(rand()*314);
+        $ticketid = time()*2;
         $notes = $_POST['notes'];
         $tcreator = $_POST['ticket_creator'];
             
