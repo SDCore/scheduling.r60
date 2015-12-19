@@ -18,13 +18,15 @@
 			if($current['text'] == "Light Rain") {
 				$picture = "/assets/imgs/weather/light_rain_2_hdv2.png";
 			}elseif($current['text'] == "Fair") {
-				$picture = "/assets/imgs/weather/fair_hd.png";
+				$picture = "/assets/imgs/weather/fair_hdv2.png";
 			}elseif($current['text'] == "Partly Cloudy") {
 				$picture = "/assets/imgs/weather/partly_cloudy_hd.png";
 			}elseif($current['text'] == "Fog") {
 				$picture = "/assets/imgs/weather/fogv2.png";
 			}elseif($current['text'] == "Cloudy") {
 				$picture = "/assets/imgs/weather/partly_cloudy_hdv2.png";
+			}elseif($current['text'] == "Mostly Cloudy") {
+				$picture = "/assets/imgs/weather/mostly_cloudy.png";
 			}else{
 				$picture = "/assets/imgs/weather/sunny_hdv2.png";
 			}
