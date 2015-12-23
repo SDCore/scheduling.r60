@@ -28,7 +28,7 @@
 			}elseif($current['text'] == "Mostly Cloudy") {
 				$picture = "/assets/imgs/weather/mostly_cloudy.png";
 			}elseif($current['text'] == "Rain"){
-				$picture = "/assets/imgs/weather/light_rain_2_hdv2.png";
+				$picture = "/assets/imgs/weather/rain_hd.png";
 			}else{
 				$picture = "/assets/imgs/weather/sunny_hdv2.png";
 			}
