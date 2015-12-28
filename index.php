@@ -29,6 +29,8 @@
 				$picture = "/assets/imgs/weather/mostly_cloudy.png";
 			}elseif($current['text'] == "Rain"){
 				$picture = "/assets/imgs/weather/rain_hd.png";
+			}elseif($current['text'] == "Sleet and Freezing Rain"){
+				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
 			}else{
 				$picture = "/assets/imgs/weather/sunny_hdv2.png";
 			}
