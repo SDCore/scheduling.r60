@@ -56,6 +56,6 @@
 		<div class="links">
 			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> Home</a>
 			<a href="<?php echo $site; ?>/tickets?page=1"><i class="fa fa-ticket"></i> Tickets</a>
-			<a href="#"><i class="fa fa-search"></i> Search</a>
+			<a href="<?php echo $site; ?>/search"><i class="fa fa-search"></i> Search</a>
 		</div>
 	</div>

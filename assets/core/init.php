@@ -2,7 +2,7 @@
 	
 	ob_start(); 
 	session_start();
-	//error_reporting(0);
+	error_reporting(0);
 
 	$site = "http://".$_SERVER['SERVER_NAME']."";
 

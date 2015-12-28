@@ -31,6 +31,10 @@
 				$picture = "/assets/imgs/weather/rain_hd.png";
 			}elseif($current['text'] == "Sleet and Freezing Rain"){
 				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
+			}elseif($current['text'] == "Freezing Rain"){
+				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
+			}elseif($current['text'] == "Sleet"){
+				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
 			}else{
 				$picture = "/assets/imgs/weather/sunny_hdv2.png";
 			}
