@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2015 at 08:59 PM
+-- Generation Time: Dec 28, 2015 at 07:32 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `ticket_id` varchar(32) NOT NULL,
   `notes` text NOT NULL,
   `ticket_creator` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detail_tickets`
@@ -71,7 +71,9 @@ INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_
 (29, 1, 'Rich', '', '8154058865', '2015-12-15', 'Toyota', 'Camary', 'Black', 39, '3', 'Paid/Completed', '1', '281358022.03024', '', 'Jeff'),
 (30, 1, 'Orlando', 'Villalobos', '8478281990', '2015-12-19', 'Infinity', 'FX35', 'White', 0, '7', 'Paid/Completed', '1', '193052750.54932', '', 'Jeff'),
 (34, 1, 'Ivann', '', '8477695417', '2015-12-19', 'JMC', 'Sierra', 'White', 15, '7', 'Paid/Completed', '1', '27616.592363', '', 'Jeff'),
-(37, 1, 'lavu', '', '5714396300', '2015-12-19', 'Toyota', 'Camary', 'Black', 0, '4', 'Paid/Completed', '1', '2901123132', '', 'Jeff');
+(37, 1, 'lavu', '', '5714396300', '2015-12-19', 'Toyota', 'Camary', 'Black', 0, '4', 'Paid/Completed', '1', '2901123132', '', 'Jeff'),
+(38, 1, 'Taylor', 'Murray', '8478461847', '2015-12-21', 'Jeep ', 'Wrangler', 'Black', 35, '7', 'Paid/Completed', '1', '2901307906', '', 'Jeff'),
+(39, 1, 'Rich', 'lafnitzegger', '8154058865', '2015-12-27', 'Jeep', 'Grand Cherokee', 'Black', 39, '3', 'Paid/Completed', '1', '2902495692', 'Add engine,                      last large discount', 'Jeff');
 
 -- --------------------------------------------------------
 
@@ -124,7 +126,7 @@ ALTER TABLE `detail_users`
 -- AUTO_INCREMENT for table `detail_tickets`
 --
 ALTER TABLE `detail_tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
 DELIMITER $$
 --
 -- Events
