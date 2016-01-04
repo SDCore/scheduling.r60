@@ -45,11 +45,11 @@
 		<div class="header">
 			<div class="brand">
 				<?php
-					if(logged_in() === true) {
-						echo $user_data['description'];
-					}else{
-						echo "Guest";
-					}
+					// if(logged_in() === true) {
+					//	echo $user_data['description'];
+					// }else{
+					//	echo "Guest";
+					// }
 				?>
 			</div>
 		</div>

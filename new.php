@@ -5,25 +5,46 @@
     $cdate = date("m/d/Y");
 
     if(empty($_POST['submitnewticket']) === false) {
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $pnumber = $_POST['phonenum'];
+		$firstname = htmlentities($_POST['firstname'], ENT_QUOTES, 'UTF-8');
+        $lastname = htmlentities($_POST['lastname'], ENT_QUOTES, 'UTF-8');
+        $pnumber = htmlentities($_POST['phonenum'], ENT_QUOTES, 'UTF-8');
         $date = $_POST['date'];
-        $vmake = $_POST['vmake'];
-        $vmodel = $_POST['vmodel'];
-        $vcolor = $_POST['vcolor'];
-        $discount = $_POST['discount'];
+        $vmake = htmlentities($_POST['vmake'], ENT_QUOTES, 'UTF-8');
+        $vmodel = htmlentities($_POST['vmodel'], ENT_QUOTES, 'UTF-8');
+        $vcolor = htmlentities($_POST['vcolor'], ENT_QUOTES, 'UTF-8');
+        $discount = htmlentities($_POST['discount'], ENT_QUOTES, 'UTF-8');
         $options = $_POST['optionsselect'];
         $user_id = $user_data['user_id'];
         $services = $_POST['serviceselect'];
-        $ticketid = time()*2;
-        $notes = $_POST['notes'];
+        $notes = htmlentities($_POST['notes'], ENT_QUOTES, 'UTF-8');
         $tcreator = $_POST['ticket_creator'];
+        $ticketid = time()*2;
+
+        if(isset($_POST['engine']) && 
+		   $_POST['engine'] == 'ETrue') {
+		    $enginepost = "1";
+		}else{
+		    $enginepost = "0";
+		} 
+
+		if(isset($_POST['wax']) && 
+		   $_POST['wax'] == 'WTrue') {
+		    $waxpost = "1";
+		}else{
+		    $waxpost = "0";
+		} 
+
+		if(isset($_POST['mat']) && 
+		   $_POST['mat'] == 'MTrue') {
+		    $matpost = "1";
+		}else{
+		    $matpost = "0";
+		}  
             
         $insertticket = "INSERT INTO detail_tickets 
-                        (id, first_name, last_name, phone_number, date, vehicle_make, vehicle_model, vehicle_color, discount, services, pre_paid_done, user_id, ticket_id, notes, ticket_creator)
+                        (id, first_name, last_name, phone_number, date, vehicle_make, vehicle_model, vehicle_color, discount, services, pre_paid_done, user_id, ticket_id, notes, ticket_creator, engine, wax, mat)
                         VALUES
-                        ('', '$firstname', '$lastname', '$pnumber', '$date', '$vmake', '$vmodel', '$vcolor', '$discount', '$services', '$options', '$user_id', '$ticketid', '$notes', '$tcreator')";
+                        ('', '$firstname', '$lastname', '$pnumber', '$date', '$vmake', '$vmodel', '$vcolor', '$discount', '$services', '$options', '$user_id', '$ticketid', '$notes', '$tcreator', '$enginepost', '$waxpost', '$matpost')";
             
         mysql_query($insertticket) or die(mysql_error());
         header("location: /ticket?id=".$ticketid."");
@@ -96,7 +117,22 @@
 			        <div class="col-md-4">
 			        	<input type="text" name="ticket_creator" id="ticket_creator" class="input" placeholder="Ticket Creator Name" required="required" />
 			        </div>
-			        
+
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-md-4">
+			    		<input type="checkbox" name="engine" id="engine" value="ETrue" /> <label for="engine">Engine Cleaning</label>
+			    	</div>
+			    	<div class="col-md-4">
+			    		<input type="checkbox" name="wax" id="wax" value="WTrue" /> <label for="wax">Wax</label>
+			    	</div>
+			    	<div class="col-md-4">
+			    		<input type="checkbox" name="mat" id="mat" value="MTrue" /> <label for="mat">Mat Set</label>
+			    	</div>
+			    </div>
+
+			    <div class="row">    
 			        <div class="col-md-12">
 			        	<input type="submit" name="submitnewticket" id="submitnewticket" class="button-raised" value="Submit Ticket" style="width: 100%;" />
 			         </div>

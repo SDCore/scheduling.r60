@@ -33,6 +33,21 @@
             $ticket_id = $row['ticket_id'];
             $notes = $row['notes'];
             $tcreator = $row['ticket_creator'];
+            $engine = $row['engine'];
+            $wax = $row['wax'];
+            $mat = $row['mat'];
+        }
+
+        if($engine == "1") {
+            $extra1 = "Engine Cleaning";
+        }
+
+        if($wax == "1") {
+            $extra2 = "Wax";
+        }
+
+        if($mat == "1") {
+            $extra3 = "Mat Set";
         }
         
         if($services == 'wax'){
@@ -79,8 +94,7 @@
                     <li>Lite duty buff</li>
                     <li>Hand Applied Miguiar's Wax</li>
                     <li>Carnuba Wax</li>
-                    <li>Shampoo all carpeting</li>
-                    <li>Shampoo all door panels</li>
+                    <li>Shampoo all carpeting/door panels</li>
                     <li>Seats cleaned and conditioned</li>
                     <li>Dashboard/glass cleaned and polished</li>
                 </ol>
@@ -117,15 +131,13 @@
             $serviceprice = "299.00";
             $servicedetails = "
                 <ol>
-                    <li>Full Service Wash</li>
-                    <li>Wheels & tires detailed</li>
-                    <li>Bug & tar removal</li>
-                    <li>Meguiar's Polymer Synthetic Sealant applied</li>
+                    <li>Full Service</li>
+                    <li>Wheels/tires detailed</li>
+                    <li>Meguiar's Polymer Synthetic Sealant</li>
                     <li>Complete surface contaminant removal by hand with claybar</li>
-                    <li>Shampoo all carpeting</li>
-                    <li>Shampoo all door panels</li>
-                    <li>Seats cleaned & conditioned</li>
-                    <li>Dashboard/glass cleaned and polished</li>
+                    <li>Shampoo all carpeting/door panels</li>
+                    <li>Seats cleaned</li>
+                    <li>Dashboard cleaned & polished</li>
                 </ol>
             ";
         }
@@ -198,7 +210,7 @@
             <hr>
             <div class="card-content">
                 <div class="print-30">
-                    <b>Phone Number:</b> <?php echo $pnumber; ?>
+                    <b>Phone #:</b> <?php echo $pnumber; ?>
                     <br />
                     <b>Date:</b> <?php echo $date; ?>
                     <hr>
@@ -208,7 +220,7 @@
                     <br />
                     <b>Vehicle Color:</b> <?php echo $vcolor; ?>
                     <br />
-                    <b>Notes:</b> <?php echo $notes; ?>
+                    <b>Notes:</b> <small><?php echo $notes; ?></small>
                 </div>
                 <div class="print-30">
                     <b><?php echo $servicetitle; ?></b>
@@ -218,6 +230,21 @@
                     </small>
                 </div>
                 <div class="print-30">
+                    <b>Extras</b>
+                    <hr style="margin: 0px; padding: 0px;">
+                    <small>
+                        <ul>
+                            <?php if(isset($extra1)) {
+                                echo '<li>'.$extra1.'';
+                            } ?>
+                            <?php if(isset($extra2)) {
+                                echo '<li>'.$extra2.'';
+                            } ?>
+                            <?php if(isset($extra3)) {
+                                echo '<li>'.$extra3.'';
+                            } ?>
+                        </ul>
+                    </small>
                     <div style="float: right;">
                         Original Price: <b>$<?php echo $serviceprice; ?></b>
                         <br />
@@ -240,7 +267,7 @@
             <hr>
             <div class="card-content">
                 <div class="print-30">
-                    <b>Phone Number:</b> <?php echo $pnumber; ?>
+                    <b>Phone #:</b> <?php echo $pnumber; ?>
                     <br />
                     <b>Date:</b> <?php echo $date; ?>
                     <hr>
@@ -250,7 +277,7 @@
                     <br />
                     <b>Vehicle Color:</b> <?php echo $vcolor; ?>
                     <br />
-                    <b>Notes:</b> <?php echo $notes; ?>
+                    <b>Notes:</b> <small><?php echo $notes; ?></small>
                 </div>
                 <div class="print-30">
                     <b><?php echo $servicetitle; ?></b>
@@ -260,6 +287,21 @@
                     </small>
                 </div>
                 <div class="print-30">
+                    <b>Extras</b>
+                    <hr style="margin: 0px; padding: 0px;">
+                    <small>
+                        <ul>
+                            <?php if(isset($extra1)) {
+                                echo '<li>'.$extra1.'';
+                            } ?>
+                            <?php if(isset($extra2)) {
+                                echo '<li>'.$extra2.'';
+                            } ?>
+                            <?php if(isset($extra3)) {
+                                echo '<li>'.$extra3.'';
+                            } ?>
+                        </ul>
+                    </small>
                     <div style="float: right;">
                         Original Price: <b>$<?php echo $serviceprice; ?></b>
                         <br />
@@ -282,7 +324,7 @@
             <hr>
             <div class="card-content">
                 <div class="print-30">
-                    <b>Phone Number:</b> <?php echo $pnumber; ?>
+                    <b>Phone #:</b> <?php echo $pnumber; ?>
                     <br />
                     <b>Date:</b> <?php echo $date; ?>
                     <hr>
@@ -292,7 +334,7 @@
                     <br />
                     <b>Vehicle Color:</b> <?php echo $vcolor; ?>
                     <br />
-                    <b>Notes:</b> <?php echo $notes; ?>
+                    <b>Notes:</b> <small><?php echo $notes; ?></small>
                 </div>
                 <div class="print-30">
                     <b><?php echo $servicetitle; ?></b>
@@ -302,6 +344,21 @@
                     </small>
                 </div>
                 <div class="print-30">
+                    <b>Extras</b>
+                    <hr style="margin: 0px; padding: 0px;">
+                    <small>
+                        <ul>
+                            <?php if(isset($extra1)) {
+                                echo '<li>'.$extra1.'';
+                            } ?>
+                            <?php if(isset($extra2)) {
+                                echo '<li>'.$extra2.'';
+                            } ?>
+                            <?php if(isset($extra3)) {
+                                echo '<li>'.$extra3.'';
+                            } ?>
+                        </ul>
+                    </small>
                     <div style="float: right;">
                         Original Price: <b>$<?php echo $serviceprice; ?></b>
                         <br />

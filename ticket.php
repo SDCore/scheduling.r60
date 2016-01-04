@@ -29,6 +29,21 @@
             $notes = $row['notes'];
             $tcreator = $row['ticket_creator'];
             $lock = $row['locked'];
+            $engine = $row['engine'];
+            $wax = $row['wax'];
+            $mat = $row['mat'];
+        }
+
+        if($engine == "1") {
+            $extra1 = "Engine Cleaning";
+        }
+
+        if($wax == "1") {
+            $extra2 = "Wax";
+        }
+
+        if($mat == "1") {
+            $extra3 = "Mat Set";
         }
 
         if($lock == 0) {
@@ -234,6 +249,18 @@
                     <div class="card-title"><?php echo $servicetitle; ?></div>
                     <div class="card-content">
                         <p><?php echo $servicedetails; ?></p>
+                        <hr>
+                        <ul>
+                            <?php if(isset($extra1)) {
+                                echo '<li>'.$extra1.'';
+                            } ?>
+                            <?php if(isset($extra2)) {
+                                echo '<li>'.$extra2.'';
+                            } ?>
+                            <?php if(isset($extra3)) {
+                                echo '<li>'.$extra3.'';
+                            } ?>
+                        </ul>
                         <div class="row">
                             <div class="col-md-12">
                                 <div style="float: right;">Sub Total - $<?php echo $serviceprice; ?></div>

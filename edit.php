@@ -28,6 +28,24 @@
             $ticket_id = $row['ticket_id'];
             $note = $row['notes'];
             $tcreator = $row['ticket_creator'];
+            $engine = $row['engine'];
+            $wax = $row['wax'];
+            $mat = $row['mat'];
+        }
+
+        if($engine == "1") {
+            $extra1 = "Engine Cleaning";
+            $check1 = "checked";
+        }
+
+        if($wax == "1") {
+            $extra2 = "Wax";
+            $check2 = "checked";
+        }
+
+        if($mat == "1") {
+            $extra3 = "Mat Set";
+            $check3 = "checked";
         }
         
         if($services == 'wax'){
@@ -208,22 +226,43 @@
         $totalprice = $serviceprice - $discount;
         
         if(empty($_POST['updateticket']) === false) {
-            $firstname = $_POST['firstname'];
-            $lastname = $_POST['lastname'];
-            $pnumber = $_POST['phonenum'];
+            $firstname = htmlentities($_POST['firstname'], ENT_QUOTES, 'UTF-8');
+            $lastname = htmlentities($_POST['lastname'], ENT_QUOTES, 'UTF-8');
+            $pnumber = htmlentities($_POST['phonenum'], ENT_QUOTES, 'UTF-8');
             $date = $_POST['date'];
-            $vmake = $_POST['vmake'];
-            $vmodel = $_POST['vmodel'];
-            $vcolor = $_POST['vcolor'];
-            $discount = $_POST['discount'];
+            $vmake = htmlentities($_POST['vmake'], ENT_QUOTES, 'UTF-8');
+            $vmodel = htmlentities($_POST['vmodel'], ENT_QUOTES, 'UTF-8');
+            $vcolor = htmlentities($_POST['vcolor'], ENT_QUOTES, 'UTF-8');
+            $discount = htmlentities($_POST['discount'], ENT_QUOTES, 'UTF-8');
             $options = $_POST['optionsselect'];
             $user_id = $user_data['user_id'];
             $services = $_POST['serviceselect'];
-            $notes = $_POST['notes'];
+            $notes = htmlentities($_POST['notes'], ENT_QUOTES, 'UTF-8');
+
+            if(isset($_POST['engine']) && 
+               $_POST['engine'] == 'ETrue') {
+                $enginepost = "1";
+            }else{
+                $enginepost = "0";
+            } 
+
+            if(isset($_POST['wax']) && 
+               $_POST['wax'] == 'WTrue') {
+                $waxpost = "1";
+            }else{
+                $waxpost = "0";
+            } 
+
+            if(isset($_POST['mat']) && 
+               $_POST['mat'] == 'MTrue') {
+                $matpost = "1";
+            }else{
+                $matpost = "0";
+            }
                 
             $insertticket = "UPDATE detail_tickets
                             SET 
-                            first_name = '$firstname', last_name = '$lastname', phone_number = '$pnumber', date = '$date', vehicle_make = '$vmake', vehicle_model = '$vmodel', vehicle_color = '$vcolor', discount = '$discount', services = '$services', pre_paid_done = '$options', notes = '$notes'
+                            first_name = '$firstname', last_name = '$lastname', phone_number = '$pnumber', date = '$date', vehicle_make = '$vmake', vehicle_model = '$vmodel', vehicle_color = '$vcolor', discount = '$discount', services = '$services', pre_paid_done = '$options', notes = '$notes', engine = '$enginepost', wax = '$waxpost', mat = '$matpost'
                             WHERE
                             ticket_id=".$ticket_id."";
                 
@@ -297,7 +336,21 @@
 	                        <div class="col-md-4">
 	                        	<input type="text" name="ticket_creator" id="ticket_creator" value="<?php echo $tcreator; ?>" disabled="disabled" />
 	                        </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="checkbox" name="engine" id="engine" value="ETrue" <?php if(isset($check1)){ echo $check1; } ?> /> <label for="engine">Engine Cleaning</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name="wax" id="wax" value="WTrue" <?php if(isset($check2)){ echo $check2; } ?> /> <label for="wax">Wax</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="checkbox" name="mat" id="mat" value="MTrue" <?php if(isset($check3)){ echo $check3; } ?> /> <label for="mat">Mat Set</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
 	                        <div class="col-md-12">
 	                            <input type="submit" name="updateticket" id="updateticket" class="button-raised el-2" value="Update Ticket" />
 	                        </div>
