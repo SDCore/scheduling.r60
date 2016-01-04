@@ -2,7 +2,7 @@
 
 <?php
 
-	$thequery = "SELECT * FROM detail_tickets ORDER BY id DESC LIMIT 6";
+	$thequery = "SELECT * FROM detail_tickets ORDER BY id DESC LIMIT 10";
 	$queryex = mysql_query($thequery);
 
 	$zipcode = "12783979";
