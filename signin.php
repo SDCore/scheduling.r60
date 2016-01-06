@@ -41,7 +41,7 @@
     <div class="container">
 		<div class="row">
 			<br />
-			<div class="col s6 offset-s3">
+			<div class="col-md-6 col-md-offset-3">
 				<div class="card">
                     <div class="card-title">Sign In</div>
 					<div class="card-content">
