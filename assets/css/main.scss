@@ -139,7 +139,7 @@ body {
 .card {
 	width: 100%;
 	margin-top: 15px;
-	border-radius: 1px;
+	border-radius: 2px;
 	margin-bottom: 15px;
 	background: #FFFFFF;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37);
@@ -149,8 +149,8 @@ body {
 		font-weight: 300;
 		padding: 6px 15px;
 		background: $primary;
-		border-top-left-radius: 1px;
-		border-top-right-radius: 1px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
 	}
 	&>.card-content {
 		padding: 8px 20px;
@@ -163,7 +163,7 @@ body {
 
 .print-card {
 	width: 100%;
-	border-radius: 1px;
+	border-radius: 2px;
 	&>.card-footer {
 		padding: 6px 15px;
 		border-top: 1px solid #EEEEEE;
