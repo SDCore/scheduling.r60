@@ -143,7 +143,7 @@
         }
         elseif($services == 7) {
             $servicetitle = "#7 Synthetic Sealer Special";
-            $serviceprice = "135.00";
+            $serviceprice = "140.00";
             $servicedetails = "
                 <ol>
                     <li>Full Service Wash</li>
