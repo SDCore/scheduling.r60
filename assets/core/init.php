@@ -4,7 +4,7 @@
 	session_start();
 	error_reporting(0);
 
-	$site = "http://".$_SERVER['SERVER_NAME']."";
+	$site = "https://".$_SERVER['SERVER_NAME']."";
 
 	require("database/connect.php");
 	require("functions/general.php");
