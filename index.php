@@ -16,27 +16,27 @@
 			$forecast = $item->xpath('yweather:forecast');
 			$current = $current[0];
 			if($current['text'] == "Light Rain") {
-				$picture = "/assets/imgs/weather/light_rain_2_hdv2.png";
+				$picture = "/assets/imgs/weather/light-rain_png.png";
 			}elseif($current['text'] == "Fair") {
-				$picture = "/assets/imgs/weather/fair_hdv2.png";
+				$picture = "/assets/imgs/weather/fair_png.png";
 			}elseif($current['text'] == "Partly Cloudy") {
-				$picture = "/assets/imgs/weather/partly_cloudy_hd.png";
+				$picture = "/assets/imgs/weather/partly-cloudy_png.png";
 			}elseif($current['text'] == "Fog") {
-				$picture = "/assets/imgs/weather/fogv2.png";
+				$picture = "/assets/imgs/weather/fog_png.png";
 			}elseif($current['text'] == "Cloudy") {
-				$picture = "/assets/imgs/weather/partly_cloudy_hdv2.png";
+				$picture = "/assets/imgs/weather/partly-cloudy_png.png";
 			}elseif($current['text'] == "Mostly Cloudy") {
-				$picture = "/assets/imgs/weather/mostly_cloudy.png";
+				$picture = "/assets/imgs/weather/mostly-cloud_png.png";
 			}elseif($current['text'] == "Rain"){
-				$picture = "/assets/imgs/weather/rain_hd.png";
+				$picture = "/assets/imgs/weather/rain_png.png";
 			}elseif($current['text'] == "Sleet and Freezing Rain"){
-				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
+				$picture = "/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}elseif($current['text'] == "Freezing Rain"){
-				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
+				$picture = "/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}elseif($current['text'] == "Sleet"){
-				$picture = "/assets/imgs/weather/sleet_freezing_rain.png";
+				$picture = "/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}else{
-				$picture = "/assets/imgs/weather/sunny_hdv2.png";
+				$picture = "/assets/imgs/weather/sunny_png.png";
 			}
 			$output = <<<END
 							<div class="card">
