@@ -55,9 +55,7 @@ body {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.58); }
   .left-nav > .header {
     width: 100%;
-    height: 150px;
-    background: url(../imgs/BackgroundV2.png) center center no-repeat;
-    background-size: cover; }
+    height: 150px; }
     .left-nav > .header > .brand {
       width: 100%;
       color: #FFFFFF;

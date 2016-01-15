@@ -5,7 +5,7 @@
 	$thequery = "SELECT * FROM detail_tickets ORDER BY id DESC LIMIT 10";
 	$queryex = mysql_query($thequery);
 
-	$zipcode = "12783979";
+	$zipcode = $user_data['zipcode'];
 	$contents = file_get_contents('http://weather.yahooapis.com/forecastrss?w='.$zipcode.'&u=f');
 	$xml = simplexml_load_string($contents);
 	$xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
@@ -98,7 +98,7 @@
 END;
 		}
 	}else{
-	    $output = '<font style="font-size: 18px;">Location not found. Try a different WOEID.</font>';
+	    $output = '<center><font style="font-size: 18px;">Please sign in to see weather.</font></center>';
 	}
 
 	?>
@@ -107,7 +107,7 @@ END;
 		<h2 class="welcome">Welcome,
 			<?php
 				if(logged_in() === true) {
-					echo $user_data['description'];
+					echo $user_data['name'];
 				}else{
 					echo "Guest";
 				}

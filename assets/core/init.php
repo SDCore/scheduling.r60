@@ -12,7 +12,7 @@
 
 	if(logged_in() === true) {
 		$session_user_id = $_SESSION['user_id'];
-		$user_data = user_data($session_user_id, 'user_id', 'username', 'password', 'email', 'avatar', 'description', 'power_rank', 'active', 'type', 'dob');
+		$user_data = user_data($session_user_id, 'user_id', 'username', 'password', 'avatar', 'active', 'zipcode', 'name');
 		if(user_active($user_data['username']) === false) {
 			session_destroy();
 			header("location: index");

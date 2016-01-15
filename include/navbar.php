@@ -4,11 +4,43 @@
 
 <head>
 
-	<title>Route 60 Detailing</title>
-	<link rel="icon" type="image/x-icon" href="<?php echo $site; ?>/assets/imgs/favicon.ico" />
+	<?php
+	
+		if(logged_in() === true) {
+			$title = $user_data['name']." ";
+		}else{
+			$title = "";
+		}
+	
+	?>
+
+	<title><?php echo $title; ?>Detail Manager</title>
+	<!-- <link rel="icon" type="image/x-icon" href="<?php echo $site; ?>/assets/imgs/favicon.ico" /> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<style>
+		<?php
+		
+			if(logged_in() === true) {
+				echo '
+					.left-nav > .header {
+						background: url('.$user_data['avatar'].') center center no-repeat;
+						background-size: cover;
+					}
+				';
+			}else{
+				echo '
+					.left-nav > .header {
+						background: url(assets/imgs/Background-Out.png) center center no-repeat;
+						background-size: cover;
+					}
+				';
+			}
+		
+		?>
+	</style>
 
 </head>
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.3.1
+-- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2016 at 03:08 AM
--- Server version: 5.6.26
--- PHP Version: 5.6.12
+-- Generation Time: Jan 15, 2016 at 03:13 PM
+-- Server version: 5.5.46-0ubuntu0.14.04.2
+-- PHP Version: 5.5.9-1ubuntu4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `details`
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `detail_tickets`
 --
 
-CREATE TABLE `detail_tickets` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `detail_tickets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `locked` int(11) NOT NULL DEFAULT '0',
   `first_name` text NOT NULL,
   `last_name` text NOT NULL,
@@ -45,8 +45,9 @@ CREATE TABLE `detail_tickets` (
   `ticket_creator` text NOT NULL,
   `engine` varchar(2) NOT NULL DEFAULT '0',
   `wax` varchar(2) NOT NULL DEFAULT '0',
-  `mat` varchar(2) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `mat` varchar(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `detail_tickets`
@@ -86,52 +87,25 @@ INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_
 -- Table structure for table `detail_users`
 --
 
-CREATE TABLE `detail_users` (
+CREATE TABLE IF NOT EXISTS `detail_users` (
   `user_id` int(11) NOT NULL,
   `username` varchar(32) NOT NULL,
   `password` varchar(1024) NOT NULL,
-  `email` varchar(1024) NOT NULL,
   `avatar` varchar(1024) NOT NULL DEFAULT 'http://placehold.it/300x300',
-  `description` varchar(10000) NOT NULL DEFAULT 'I''m a newly registered user on HoloHex!',
-  `power_rank` varchar(1024) NOT NULL DEFAULT '1',
   `active` int(11) NOT NULL DEFAULT '1',
-  `type` varchar(32) NOT NULL DEFAULT 'User',
-  `dob` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `zipcode` varchar(10) NOT NULL DEFAULT '000000',
+  `name` text NOT NULL,
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Users table for Details.';
 
 --
 -- Dumping data for table `detail_users`
 --
 
-INSERT INTO `detail_users` (`user_id`, `username`, `password`, `email`, `avatar`, `description`, `power_rank`, `active`, `type`, `dob`) VALUES
-(1, 'route60admin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'sdcored@gmail.com', 'http://i.imgur.com/GD9pndo.png', 'Route 60', '3', 1, 'Admin', '2015-05-19 20:00:00'),
-(2, 'lakecookadmin', '2c2f3a1488d25d0b9a8b2884b64f768be0ae10595223f6d775d3ee3f20042741d2d3f21ed31448e17969f75e09728523ba8a0d7bce17222cdf8dfd205a9118ba', 'sdcored@gmail.com', 'http://placehold.it/300x300', 'Lake Cook', '3\r\n', 1, 'Admin', '2015-12-05 20:39:30');
+INSERT INTO `detail_users` (`user_id`, `username`, `password`, `avatar`, `active`, `zipcode`, `name`) VALUES
+(1, 'route60admin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'assets/imgs/BackgroundV2.png', 1, '12783979', 'Route 60'),
+(2, 'lakecookadmin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'http://placehold.it/500x500', 1, '12783991', 'Lake Cook');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `detail_tickets`
---
-ALTER TABLE `detail_tickets`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `detail_users`
---
-ALTER TABLE `detail_users`
-  ADD PRIMARY KEY (`user_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `detail_tickets`
---
-ALTER TABLE `detail_tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 DELIMITER $$
 --
 -- Events
