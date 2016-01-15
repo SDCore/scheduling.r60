@@ -185,8 +185,12 @@ END;
 				                        echo '<td>'.$servicetitle.'</td>';
 				                        echo '<td>'.$option.'</td>';
 				                        echo '</tr>';
-                                    }else{
-                                    	$echoout = "<center><h2>No tickets available.</h2></center>";
+                                    }elseif($row['user_id'] != $user_data['user_id']){
+                                    	if(logged_in() === true) {
+
+                                    	}else{
+                                    		$echoout = "<center><h2>No tickets available.</h2></center>";
+                                    	}
                                     }
 
 								}
