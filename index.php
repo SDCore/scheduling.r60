@@ -184,23 +184,14 @@ END;
 			                        }elseif($options == 'Appointment') {
                                         $option = "<center><h6 style='color: #FFC017; margin: 0px; font-size: 20px;'><i class='fa fa-clock-o'></i></h6></center>";
                                     }
-                                    
-                                    if($row['user_id'] == $user_data['user_id']) {
-                                    	echo '<tr>';
+										
+										echo '<tr>';
 				                        echo '<td><a href="'.$site.'/ticket?id='.$row['ticket_id'].'">'.$row['first_name'].' '.$row['last_name'].'</a></td>';
 				                        echo '<td>'.$row['date'].'</td>';
 				                        echo '<td>'.$servicetitle.'</td>';
 				                        echo '<td>'.$option.'</td>';
 				                        echo '</tr>';
-                                    }elseif($row['user_id'] != $user_data['user_id']){
-                                    	if(logged_in() === true) {
-
-                                    	}else{
-                                    		$echoout = "<center><h2>No tickets available.</h2></center>";
-                                    	}
-                                    }
-
-								}
+}
 								
 								if(isset($echoout)) {
 									echo $echoout;
