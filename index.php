@@ -98,7 +98,14 @@
 END;
 		}
 	}else{
-	    $output = '<center><font style="font-size: 18px;">Please sign in to see weather.</font></center>';
+	    $output = '
+
+		<div class="card">
+			<div class="card-title">Weather</div>
+			<div class="card-content">
+				<center><font style="font-size: 18px;">Please sign in to see weather.</font></center>
+			</div>
+		</div>';
 	}
 
 	?>
