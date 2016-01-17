@@ -18,6 +18,9 @@ body {
 .right {
   float: right; }
 
+.text-center {
+  text-align: center; }
+
 .nav {
   width: 100%;
   z-index: 9999;
@@ -348,5 +351,9 @@ input[type="checkbox"] {
 label {
   margin: 20px;
   margin-left: 5px; }
+
+.type-highlight {
+  color: #0066CC;
+  /* background-color: #0066CC; */ }
 
 /*# sourceMappingURL=main.css.map */

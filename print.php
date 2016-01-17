@@ -205,7 +205,26 @@
     <div class="print-container">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b>
+                    <div class="row" style="margin: 0;">
+                        <div class="col-xs-3">
+                            <div class="text-center"><?php echo $firstname; ?> <?php echo $lastname; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="theoption text-center"><?php echo $option; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center"><span class="type-highlight">Customer</span></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center">
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <br />
+                                <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </b>
             </div>
             <hr>
             <div class="card-content">
@@ -262,7 +281,26 @@
     <div class="print-container" style="margin-top: 27px;">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b>
+                    <div class="row" style="margin: 0;">
+                        <div class="col-xs-3">
+                            <div class="text-center"><?php echo $firstname; ?> <?php echo $lastname; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="theoption text-center"><?php echo $option; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center"><span class="type-highlight">Detail Shop</span></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center">
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <br />
+                                <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </b>
             </div>
             <hr>
             <div class="card-content">
@@ -319,7 +357,26 @@
     <div class="print-container" style="margin-top: 33px;">
         <div class="print-card">
             <div class="card-title">
-                <b><?php echo $firstname." ".$lastname."</b><div style='margin-left: 15%; display: inline-block;' class='theoption'>".$option."</div><span style='float: right; font-size: 9pt;'>Invoice #".$tid." - ".$tcreator."<br /><span style='color: #FF0000;'>Route 60 Auto Wash and Detail</span></span>"; ?>
+                <b>
+                    <div class="row" style="margin: 0;">
+                        <div class="col-xs-3">
+                            <div class="text-center"><?php echo $firstname; ?> <?php echo $lastname; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="theoption text-center"><?php echo $option; ?></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center"><span class="type-highlight">Sales Person</span></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="text-center">
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <br />
+                                <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </b>
             </div>
             <hr>
             <div class="card-content">
