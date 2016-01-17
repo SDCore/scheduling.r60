@@ -218,7 +218,7 @@
                         </div>
                         <div class="col-xs-3">
                             <div class="text-center">
-                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?> - <?php echo $tcreator; ?></span>
                                 <br />
                                 <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
                             </div>
@@ -294,7 +294,7 @@
                         </div>
                         <div class="col-xs-3">
                             <div class="text-center">
-                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?> - <?php echo $tcreator; ?></span>
                                 <br />
                                 <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
                             </div>
@@ -370,7 +370,7 @@
                         </div>
                         <div class="col-xs-3">
                             <div class="text-center">
-                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?></span>
+                                <span style="font-size: 9pt;">Invoice #<?php echo $tid; ?> - <?php echo $tcreator; ?></span>
                                 <br />
                                 <span style="color: #FF0000; font-size: 9pt;">Route 60 Auto Wash & Detail</span>
                             </div>
