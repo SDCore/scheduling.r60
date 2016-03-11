@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10deb1
+-- version 4.5.3.1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2016 at 03:13 PM
--- Server version: 5.5.46-0ubuntu0.14.04.2
--- PHP Version: 5.5.9-1ubuntu4.14
+-- Generation Time: Mar 11, 2016 at 04:07 AM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `details`
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `detail_tickets`
 --
 
-CREATE TABLE IF NOT EXISTS `detail_tickets` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `detail_tickets` (
+  `id` int(11) NOT NULL,
   `locked` int(11) NOT NULL DEFAULT '0',
   `first_name` text NOT NULL,
   `last_name` text NOT NULL,
@@ -45,9 +45,8 @@ CREATE TABLE IF NOT EXISTS `detail_tickets` (
   `ticket_creator` text NOT NULL,
   `engine` varchar(2) NOT NULL DEFAULT '0',
   `wax` varchar(2) NOT NULL DEFAULT '0',
-  `mat` varchar(2) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+  `mat` varchar(2) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detail_tickets`
@@ -79,7 +78,23 @@ INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_
 (38, 1, 'Taylor', 'Murray', '8478461847', '2015-12-21', 'Jeep ', 'Wrangler', 'Black', 35, '7', 'Paid/Completed', '1', '2901307906', '', 'Jeff', '0', '0', '0'),
 (39, 1, 'Rich', 'lafnitzegger', '8154058865', '2015-12-27', 'Jeep', 'Grand Cherokee', 'Black', 39, '3', 'Paid/Completed', '1', '2902495692', 'Add engine,                      last large discount', 'Jeff', '0', '0', '0'),
 (40, 1, 'Cindy', 'Brennan', '8476510564', '2015-12-29', 'Infinty', 'G37', 'Blue', 99, '6', 'Paid/Completed', '1', '2902816870', '', 'Jeff', '0', '0', '0'),
-(42, 1, 'espenosa', '', '3314446355', '2016-01-05', 'Honda', 'Pilot', 'Beige', 35, '7', 'Paid/Completed', '1', '2904020468', '', 'Jeff', '0', '0', '0');
+(42, 1, 'espenosa', '', '3314446355', '2016-01-05', 'Honda', 'Pilot', 'Beige', 35, '7', 'Paid/Completed', '1', '2904020468', '', 'Jeff', '0', '0', '0'),
+(44, 1, 'Joe', 'Palminteri', '8477105570', '2016-01-16', 'cadillac', 'CTS', 'sILVER', 40, '7', 'Paid/Completed', '1', '2905947172', '', 'Jeff', '0', '0', '0'),
+(45, 1, 'GREG', 'lEONARD', '5132767251', '2016-01-16', 'iNFINITY', 'FX35X', 'tAN', 19, '3', 'Paid/Completed', '1', '2905951276', '', 'Jeff', '0', '0', '0'),
+(46, 1, 'matt', 'udoni', '8479551929', '2016-01-16', 'audi', 'Q&amp;7', 'grey', 0, '7', 'Paid/Completed', '1', '2905952372', '', 'Jeff', '0', '0', '0'),
+(47, 1, 'Matt', 'Udoni', '8479551929', '2016-01-16', 'Audi', 'A6', 'grey', 0, '7', 'Paid/Completed', '1', '2905968374', '', 'Jeff', '0', '0', '0'),
+(48, 1, 'Shawn', 'Cosby', '4045934141', '2016-01-17', 'Range rover', 'Sport', 'red', 40, '7', 'Paid/Completed', '1', '2906123260', '', 'Jeff', '0', '0', '0'),
+(49, 1, 'Nadeem', 'Ghias', '8474773634', '2016-01-26', 'Toyota', 'FJ crusier', 'Blue', 99, '6', 'Paid/Completed', '1', '2907642394', '', 'Jeff', '0', '0', '0'),
+(50, 1, 'Donna', 'DeBusman', '8472933944', '2016-01-26', 'Toyota', 'Rav4', 'Bronze', 99, '6', 'Paid/Completed', '1', '2907674716', '', 'Jeff', '0', '0', '0'),
+(51, 1, 'Ai', 'Lockard', '8479700360', '2016-01-31', 'Kia ', 'Soal', 'Silver', 39, '3', 'Paid/Completed', '1', '2908533170', '', 'Jeff', '0', '0', '0'),
+(52, 1, 'Rick', 'Loiben', '8477721030', '2016-02-06', 'Chrysler', 'town and country', 'Silver', -21, '1', 'Paid/Completed', '1', '2909564692', 'WASH ONLY EXTERIOR', 'Jeff', '0', '0', '0'),
+(53, 1, 'Mel', 'k', '2245183684', '2016-02-06', 'Chevy ', 'Impala', 'Dark grey', 40, '7', 'Paid/Completed', '1', '2909581778', 'Full service', 'Jeff', '0', '0', '0'),
+(54, 1, 'Niraj', 'Shah', '2246598411', '2016-02-07', 'Toyota ', 'Camary', 'Black', 0, '1', 'Paid/Completed', '1', '2909737272', '', 'Jeff', '0', '0', '0'),
+(55, 1, 'Tom', 'vawgne', '8478378368', '2016-02-13', 'Infinity', 'G5', 'grey', 40, '7', 'Paid/Completed', '1', '2910786736', '', 'Jeff', '0', '0', '0'),
+(56, 1, 'Alex', 'Moskvitchev', '8474092125', '2016-02-27', 'Merceeds', 'ML', 'Black', 0, '7', 'Paid/Completed', '1', '2913172722', '', 'Jeff', '0', '0', '0'),
+(57, 1, 'shawn', 'Cosby', '4045934141', '2016-02-28', 'lexus', 'GX470', 'Black', 20, '7', 'Paid/Completed', '1', '2913374646', '', 'Jeff', '0', '0', '0'),
+(58, 0, 'steve', '', '8473048180', '2016-03-10', 'Jeep', 'grand cherokee', 'black', 24, '3', 'Appointment', '1', '2914398276', '', 'Jeff', '0', '0', '0'),
+(59, 0, 'Suk', 'Molga', '8476377797', '2016-03-08', 'Nissan ', 'Pathfinder', 'White', -11, '1', 'Paid/Completed', '1', '2914936604', '', 'Jeff', '0', '0', '0');
 
 -- --------------------------------------------------------
 
@@ -87,15 +102,14 @@ INSERT INTO `detail_tickets` (`id`, `locked`, `first_name`, `last_name`, `phone_
 -- Table structure for table `detail_users`
 --
 
-CREATE TABLE IF NOT EXISTS `detail_users` (
+CREATE TABLE `detail_users` (
   `user_id` int(11) NOT NULL,
   `username` varchar(32) NOT NULL,
   `password` varchar(1024) NOT NULL,
   `avatar` varchar(1024) NOT NULL DEFAULT 'http://placehold.it/300x300',
   `active` int(11) NOT NULL DEFAULT '1',
   `zipcode` varchar(10) NOT NULL DEFAULT '000000',
-  `name` text NOT NULL,
-  PRIMARY KEY (`user_id`)
+  `name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Users table for Details.';
 
 --
@@ -106,6 +120,31 @@ INSERT INTO `detail_users` (`user_id`, `username`, `password`, `avatar`, `active
 (1, 'route60admin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'assets/imgs/BackgroundV2.png', 1, '12783979', 'Route 60'),
 (2, 'lakecookadmin', '5dcd21b592ec9e121e9b7ee95d093ff2b8e7a72098245605b6fd070e58e0b1517c98111debf19efb6c4bc433e3881363511874df3231218a2da0d7603d1ec45e', 'http://placehold.it/500x500', 1, '12783991', 'Lake Cook');
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `detail_tickets`
+--
+ALTER TABLE `detail_tickets`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `detail_users`
+--
+ALTER TABLE `detail_users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `detail_tickets`
+--
+ALTER TABLE `detail_tickets`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 DELIMITER $$
 --
 -- Events
