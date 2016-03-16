@@ -2,7 +2,7 @@
 
 <?php
     if(logged_in() === false) {
-    	header("location: /signin");
+    	header("location: /details/signin");
 	}else{
                         
 	}

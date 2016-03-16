@@ -3,7 +3,7 @@
     <?php
     
         if(logged_in() === false) {
-            header("location: /signin");
+            header("location: /details/signin");
         }else{
                         
         }
@@ -194,9 +194,34 @@
             $active11 = "selected";
         }
         
-        mysql_query("DELETE FROM detail_tickets WHERE ticket_id = '$ticket_id'");
-        header("location: $site/tickets?page=1")
+    ?>
+    
+    <div class="container">
 
-?>
+    	<div class="card">
+    		<div class="card-title">Delete Ticket?</div>
+    		<div class="card-content">
+    			<p>
+    				Are you sure you want to delete this ticket?
+    				<br /><br />
+    				Name: <?php echo $firstname; ?> <?php echo $lastname; ?>
+    				<br />
+    				Date: <?php echo $date; ?>
+    				<br />
+    				Service: <?php echo $servicetitle; ?>
+    				<br /><br />
+    				<div class="row">
+    					<div class="col-md-6">
+    						<a href="<?php echo $site; ?>/deleteconfirm?id=<?php echo $ticket_id; ?>" class="button-raised el-2">Yes</a>
+    					</div>
+    					<div class="col-md-6">
+    						<a href="<?php echo $site; ?>/ticket?id=<?php echo $ticket_id; ?>" class="button-raised el-2">No</a>
+    					</div>
+    				</div>
+    			</p>
+    		</div>
+    	</div>
+
+    </div>
     
 <?php require_once("./include/footer.php"); ?>

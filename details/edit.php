@@ -3,7 +3,7 @@
     <?php
     
         if(logged_in() === false) {
-            header("location: /signin");
+            header("location: /details/signin");
         }else{
                         
         }
@@ -267,7 +267,7 @@
                             ticket_id=".$ticket_id."";
                 
             mysql_query($insertticket) or die(mysql_error());
-            header("location: /ticket?id=".$ticketid."");
+            header("location: /details/ticket?id=".$ticketid."");
         }
         
     ?>

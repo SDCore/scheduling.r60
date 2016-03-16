@@ -15,7 +15,7 @@
 	?>
 
 	<title><?php echo $title; ?>Detail Manager</title>
-	<!-- <link rel="icon" type="image/x-icon" href="<?php echo $site; ?>/assets/imgs/favicon.ico" /> -->
+	<link rel="icon" type="image/x-icon" href="<?php echo $site; ?>/assets/imgs/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -65,9 +65,9 @@
 			?>
 			<?php
 				if(logged_in() === true) {
-					echo '<a href="/signout" class="navigation"><i class="fa fa-power-off"></i> Sign Out</a>';
+					echo '<a href="'.$site.'/signout" class="navigation"><i class="fa fa-power-off"></i> Sign Out</a>';
 				}else{
-					echo '<a href="/signin" class="navigation"><i class="fa fa-power-off"></i> Sign In</a>';
+					echo '<a href="'.$site.'/signin" class="navigation"><i class="fa fa-power-off"></i> Sign In</a>';
 				}
 			?>
 		</div>

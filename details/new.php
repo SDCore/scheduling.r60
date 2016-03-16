@@ -47,7 +47,7 @@
                         ('', '$firstname', '$lastname', '$pnumber', '$date', '$vmake', '$vmodel', '$vcolor', '$discount', '$services', '$options', '$user_id', '$ticketid', '$notes', '$tcreator', '$enginepost', '$waxpost', '$matpost')";
             
         mysql_query($insertticket) or die(mysql_error());
-        header("location: /ticket?id=".$ticketid."");
+        header("location: /details/ticket?id=".$ticketid."");
     }
 
 ?>
