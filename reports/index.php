@@ -2,9 +2,6 @@
 
 <?php
 
-	$thequery = "SELECT * FROM detail_tickets ORDER BY id DESC LIMIT 10";
-	$queryex = mysql_query($thequery);
-
 	$zipcode = $user_data['zipcode'];
 	$contents = file_get_contents('http://weather.yahooapis.com/forecastrss?w='.$zipcode.'&u=f');
 	$xml = simplexml_load_string($contents);
