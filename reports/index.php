@@ -13,27 +13,27 @@
 			$forecast = $item->xpath('yweather:forecast');
 			$current = $current[0];
 			if($current['text'] == "Light Rain") {
-				$picture = "/details/assets/imgs/weather/light-rain_png.png";
+				$picture = "/reports/assets/imgs/weather/light-rain_png.png";
 			}elseif($current['text'] == "Fair") {
-				$picture = "/details/assets/imgs/weather/fair_png.png";
+				$picture = "/reports/assets/imgs/weather/fair_png.png";
 			}elseif($current['text'] == "Partly Cloudy") {
-				$picture = "/details/assets/imgs/weather/partly-cloudy_png.png";
+				$picture = "/reports/assets/imgs/weather/partly-cloudy_png.png";
 			}elseif($current['text'] == "Fog") {
-				$picture = "/details/assets/imgs/weather/fog_png.png";
+				$picture = "/reports/assets/imgs/weather/fog_png.png";
 			}elseif($current['text'] == "Cloudy") {
-				$picture = "/details/assets/imgs/weather/partly-cloudy_png.png";
+				$picture = "/reports/assets/imgs/weather/partly-cloudy_png.png";
 			}elseif($current['text'] == "Mostly Cloudy") {
-				$picture = "/details/assets/imgs/weather/mostly-cloud_png.png";
+				$picture = "/reports/assets/imgs/weather/mostly-cloudy_png.png";
 			}elseif($current['text'] == "Rain"){
-				$picture = "/details/assets/imgs/weather/rain_png.png";
+				$picture = "/reports/assets/imgs/weather/rain_png.png";
 			}elseif($current['text'] == "Sleet and Freezing Rain"){
-				$picture = "/details/assets/imgs/weather/sleet-freezing-rain_png.png";
+				$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}elseif($current['text'] == "Freezing Rain"){
-				$picture = "/details/assets/imgs/weather/sleet-freezing-rain_png.png";
+				$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}elseif($current['text'] == "Sleet"){
-				$picture = "/details/assets/imgs/weather/sleet-freezing-rain_png.png";
+				$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
 			}else{
-				$picture = "/details/assets/imgs/weather/sunny_png.png";
+				$picture = "/reports/assets/imgs/weather/sunny_png.png";
 			}
 			$output = <<<END
 							<div class="card">

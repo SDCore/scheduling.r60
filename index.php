@@ -29,7 +29,7 @@
 				<div class="card">
 					<div class="card-content">
 						<p>
-							<center><a href="#"><i class="fa fa-paperclip" style="font-size: 300px;"></i></a></center>
+							<center><a href="/reports"><i class="fa fa-paperclip" style="font-size: 300px;"></i></a></center>
 						</p>
 					</div>
 				</div>
