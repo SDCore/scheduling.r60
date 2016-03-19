@@ -87,7 +87,8 @@
 		</div>
 		<div class="links">
 			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> Home</a>
-			<a href="<?php echo $site; ?>#"><i class="fa fa-paperclip"></i> Reports</a>
-			<a href="<?php echo $site; ?>#"><i class="fa fa-search"></i> Search</a>
+			<a href="#"><i class="fa fa-paperclip"></i> Reports</a>
+			<a href="#"><i class="fa fa-search"></i> Search</a>
+			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> Info</a>
 		</div>
 	</div>
