@@ -1,4 +1,4 @@
-;@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,500italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,500italic,700italic,700);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
 
 $darkprimary: #1976D2;
@@ -46,7 +46,7 @@ body {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.37);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37);
 	&>.brand {
 		color: #FFFFFF;
 		font-weight: bold;

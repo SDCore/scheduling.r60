@@ -210,6 +210,31 @@
         
     ?>
     
+        <script type="text/javascript">
+function closePrint () {
+  document.body.removeChild(this.__container__);
+}
+
+function setPrint () {
+  this.contentWindow.__container__ = this;
+  this.contentWindow.onbeforeunload = closePrint;
+  this.contentWindow.onafterprint = closePrint;
+  this.contentWindow.focus(); // Required for IE
+  this.contentWindow.print();
+}
+
+function printPage (sURL) {
+  var oHiddFrame = document.createElement("iframe");
+  oHiddFrame.onload = setPrint;
+  oHiddFrame.style.visibility = "hidden";
+  oHiddFrame.style.position = "fixed";
+  oHiddFrame.style.right = "0";
+  oHiddFrame.style.bottom = "0";
+  oHiddFrame.src = sURL;
+  document.body.appendChild(oHiddFrame);
+}
+</script>
+    
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -231,7 +256,7 @@
                         <p>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <a href="<?php echo $site; ?>/print?id=<?php echo $ticket_id; ?>" target="_blank" class="button-raised print el-2"><i class="fa fa-print"></i> Print</a>
+                                    <a href="javascript:void(0)" onclick="printPage('print.php?id=<?php echo $ticket_id; ?>');" class="button-raised print el-2"><i class="fa fa-print"></i> Print</a>
                                 </div>
                                 <div class="col-md-4">
                                     <a <?php echo $cdisabled; ?> href="<?php echo $site; ?>/edit?id=<?php echo $ticket_id; ?>" class="button-raised el-2"><i class="fa fa-pencil"></i> Edit</a>
