@@ -19,6 +19,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#0D4099">
+	<link rel="icon" sizes="192x192" href="./details/assets/imgs/favicon.ico">
 	
 	<style>
 		<?php
@@ -87,7 +90,8 @@
 		</div>
 		<div class="links">
 			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> Home</a>
-			<a href="<?php echo $site; ?>#"><i class="fa fa-paperclip"></i> Reports</a>
-			<a href="<?php echo $site; ?>#"><i class="fa fa-search"></i> Search</a>
+			<a href="#"><i class="fa fa-paperclip"></i> Reports</a>
+			<a href="#"><i class="fa fa-search"></i> Search</a>
+			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> Info</a>
 		</div>
 	</div>
