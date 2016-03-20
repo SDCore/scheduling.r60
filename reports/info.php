@@ -2,8 +2,8 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
 				<div class="card">
 					<div class="card-title">Emails</div>
 					<div class="card-content text-center">

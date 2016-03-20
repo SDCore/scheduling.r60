@@ -19,6 +19,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#0D4099">
+	<link rel="icon" sizes="192x192" href="./details/assets/imgs/favicon.ico">
 	
 	<style>
 		<?php

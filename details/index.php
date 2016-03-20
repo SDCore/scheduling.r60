@@ -45,12 +45,12 @@
 									Last Updated: {$current['date']}
 									<br /><br />
 									<div class="row">
-										<div class="col-sm-6" style="text-align: center; padding-top: 5%;">
+										<div class="col-xs-6 col-sm-6" style="text-align: center; padding-top: 5%;">
 											<h1 style="margin: 0px; padding: 0px; font-size: 25pt;">{$current['temp']}&deg;F</h1>
 											<h2 style="text-align: center; margin: 0px; padding: 0px; font-size: 20pt; font-weight: 400;">{$current['text']}</h2>
 											<b><h3 style="text-align: center; margin: 0px; padding: 0px; font-size: 10pt; font-weight: 400;">High: {$forecast[0]['high']}&deg;F / Low: {$forecast[0]['low']}&deg;F</h3></b>
 										</div>
-										<div class="col-sm-6">
+										<div class="col-xs-6 col-sm-6">
 											<center><img src="{$picture}" style="width: 100%;" /></center>
 										</div>
 									</div>
@@ -129,7 +129,7 @@ END;
 							<thead>
 								<tr>
 									<th>Name</th>
-									<th>Date</th>
+									<th class="hidden-xs hidden-sm">Date</th>
 									<th>Detail</th>
 									<th>Completed</th>
 								</tr>
@@ -187,7 +187,7 @@ END;
 										
 										echo '<tr>';
 				                        echo '<td><a href="'.$site.'/ticket?id='.$row['ticket_id'].'">'.$row['first_name'].' '.$row['last_name'].'</a></td>';
-				                        echo '<td>'.$row['date'].'</td>';
+				                        echo '<td class="hidden-sm hidden-xs">'.$row['date'].'</td>';
 				                        echo '<td>'.$servicetitle.'</td>';
 				                        echo '<td>'.$option.'</td>';
 				                        echo '</tr>';
@@ -213,17 +213,6 @@ END;
 			<div class="col-md-4">
 				<?php echo $output; ?>
 			</div>
-
-			<!-- <div class="col-md-4">
-				<div class="card">
-					<div class="card-title">Notifications</div>
-					<div class="card-content">
-						<div class="notification">
-							<b>PSST!</b> Print.
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</div>
 
 	</div>
