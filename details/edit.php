@@ -286,7 +286,7 @@
 	                            <input type="text" name="lastname" id="lastname" class="validate" value="<?php echo $lastname; ?>" placeholder="Last Name" />
 	                        </div>
 	                        <div class="col-md-6">
-	                            <input type="text" name="phonenum" id="phonenum" class="validate" required="required" value="<?php echo $pnumber; ?>" />
+	                            <input type="number" name="phonenum" id="phonenum" class="validate" required="required" value="<?php echo $pnumber; ?>" />
 	                        </div>
 	                        <div class="col-md-6">
 	                            <input type="date" name="date" id="date" class="validate" required="required" value="<?php echo $date; ?>" />
@@ -303,7 +303,7 @@
 	                            <input type="text" name="vcolor" id="vcolor" class="validate" required="required" value="<?php echo $vcolor; ?>" placeholder="Vehicle Color" />
 	                        </div>
 	                        <div class="col-md-4">
-	                            <input type="text" name="discount" id="discount" class="validate discount-icon" required="required" value="<?php echo $discount; ?>" placeholder="Discount" style="padding-left: 22px;" />
+	                            <input type="number" name="discount" id="discount" class="validate discount-icon" required="required" value="<?php echo $discount; ?>" placeholder="Discount" style="padding-left: 22px;" />
 	                        </div>
 	                        <div class="col-md-4">
 	                            <select name="serviceselect" id="serviceselect">

@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#0D4099">
+	<meta name="theme-color" content="#2196F3">
 	<link rel="icon" sizes="192x192" href="./details/assets/imgs/favicon.ico">
 	
 	<style>
@@ -77,8 +77,8 @@
 	</div>
 
 	<div class="left-nav">
-		<div class="header">
-			<div class="brand">
+		<div class="header hidden-xs hidden-sm">
+			<div class="brand hidden-xs hidden-sm">
 				<?php
 					// if(logged_in() === true) {
 					//	echo $user_data['description'];
@@ -89,8 +89,8 @@
 			</div>
 		</div>
 		<div class="links">
-			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> Home</a>
-			<a href="<?php echo $site; ?>/tickets?page=1"><i class="fa fa-ticket"></i> Tickets</a>
-			<a href="<?php echo $site; ?>/search"><i class="fa fa-search"></i> Search</a>
+			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> <span class="hidden-xs hidden-sm">Home</span></a>
+			<a href="<?php echo $site; ?>/tickets?page=1"><i class="fa fa-ticket"></i> <span class="hidden-xs hidden-sm">Tickets</span></a>
+			<a href="<?php echo $site; ?>/search"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm">Search</span></a>
 		</div>
 	</div>

@@ -265,6 +265,7 @@
                             <div class="col-md-12">
                                 <div style="float: right;">Sub Total - $<?php echo $serviceprice; ?></div>
                             </div>
+                            <br />
                             <div class="col-md-12">
                                 <div style="float: right;">Discount - $<?php echo $discount; ?></div>
                             </div>

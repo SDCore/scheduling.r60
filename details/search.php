@@ -41,10 +41,10 @@
 				<table class="table" padding="10" style="text-align: center;">
 					<thead>
 						<tr>
-							<th>ID</th>
-							<th>Locked</th>
+							<th class="hidden-xs hidden-sm">ID</th>
+							<th class="hidden-xs hidden-sm">Locked</th>
 							<th>Name</th>
-							<th>Date</th>
+							<th class="hidden-xs hidden-sm">Date</th>
 							<th>Detail</th>
 							<th>Compeleted</th>
 						</tr>
@@ -108,10 +108,10 @@
                                 }
 
                                 echo '<tr>';
-                                echo '<td>'.$id.'</td>';
-                                echo '<td>'.$locking.'</td>';
+                                echo '<td class="hidden-xs hidden-sm">'.$id.'</td>';
+                                echo '<td class="hidden-xs hidden-sm">'.$locking.'</td>';
                                 echo '<td><a href="'.$site.'/ticket?id='.$row['ticket_id'].'">'.$row['first_name'].' '.$row['last_name'].'</a></td>';
-                                echo '<td>'.$row['date'].'</td>';
+                                echo '<td class="hidden-xs hidden-sm">'.$row['date'].'</td>';
                                 echo '<td>'.$servicetitle.'</td>';
                                 echo '<td>'.$option.'</td>';
                                 echo '</tr>';

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,500italic,700italic,700);
+;@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,300,500,500italic,700italic,700);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
 
 $darkprimary: #1976D2;
@@ -14,8 +14,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
-	font-weight: bold;
 	min-height: 100%;
+	font-weight: bold;
 	background: #EFEFEF;
 	font-family: "RobotoDraft", Arial, sans-serif, Helvetica;
 }
@@ -42,29 +42,29 @@ body {
 	font-size: 14pt;
 	position: fixed;
 	padding: 18px 20px;
-	background: #FFFFFF;
+	background: $primary;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.37);
 	&>.brand {
-		color: $primary;
+		color: #FFFFFF;
 		font-weight: bold;
 		text-decoration: none;
 		transition: all 0.18s ease;
 		&:hover {
-			color: #666666;
+			color: #DDDDDD;
 			transition: all 0.18s ease;
 		}
 	}
 	&>.right>a {
-		color: $divider;
+		color: #FFFFFF;
 		margin-left: 5px;
 		margin-right: 5px;
 		transition: all 0.18s ease;
 	}
 	&>.right>.navigation:hover {
-		color: #666666;
+		color: #DDDDDD;
 		transition: all 0.18s ease;
 	}
 }
@@ -325,6 +325,23 @@ td {
 }
 
 input[type='text'] {
+	width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #DEDEDE;
+    transition: border-bottom 0.18s ease;
+    &:focus {
+        border-bottom: 2px solid #ABABAB;
+        transition: border-bottom 0.18s ease;
+    }
+}
+
+input[type='number'] {
 	width: 100%;
     border: none;
     outline: none;

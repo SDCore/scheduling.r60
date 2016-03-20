@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $site; ?>/assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#0D4099">
+	<meta name="theme-color" content="#2196F3">
 	<link rel="icon" sizes="192x192" href="./details/assets/imgs/favicon.ico">
 	
 	<style>
@@ -77,7 +77,7 @@
 	</div>
 
 	<div class="left-nav">
-		<div class="header">
+		<div class="header hidden-xs hidden-sm">
 			<div class="brand">
 				<?php
 					// if(logged_in() === true) {
@@ -89,9 +89,9 @@
 			</div>
 		</div>
 		<div class="links">
-			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> Home</a>
-			<a href="#"><i class="fa fa-paperclip"></i> Reports</a>
-			<a href="#"><i class="fa fa-search"></i> Search</a>
-			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> Info</a>
+			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> <span class="hidden-xs hidden-sm">Home</span></a>
+			<a href="#"><i class="fa fa-paperclip"></i> <span class="hidden-xs hidden-sm">Reports</a>
+			<a href="#"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm">Search</span></a>
+			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> <span class="hidden-xs hidden-sm">Info</span></a>
 		</div>
 	</div>
