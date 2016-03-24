@@ -211,7 +211,7 @@ END;
 			</div>
 
 			<div class="col-md-4">
-				<?php echo $output; ?>
+				<?=$output; ?>
 			</div>
 		</div>
 

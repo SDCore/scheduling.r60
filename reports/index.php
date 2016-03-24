@@ -42,12 +42,12 @@
 									Last Updated: {$current['date']}
 									<br /><br />
 									<div class="row">
-										<div class="col-sm-6" style="text-align: center; padding-top: 5%;">
+										<div class="col-xs-6 col-sm-6" style="text-align: center; padding-top: 5%;">
 											<h1 style="margin: 0px; padding: 0px; font-size: 25pt;">{$current['temp']}&deg;F</h1>
 											<h2 style="text-align: center; margin: 0px; padding: 0px; font-size: 20pt; font-weight: 400;">{$current['text']}</h2>
 											<b><h3 style="text-align: center; margin: 0px; padding: 0px; font-size: 10pt; font-weight: 400;">High: {$forecast[0]['high']}&deg;F / Low: {$forecast[0]['low']}&deg;F</h3></b>
 										</div>
-										<div class="col-sm-6">
+										<div class="col-xs-6 col-sm-6">
 											<center><img src="{$picture}" style="width: 100%;" /></center>
 										</div>
 									</div>
@@ -125,7 +125,7 @@ END;
 						<table class="table" padding="10" style="text-align: center;">
 							<thead>
 								<tr>
-									
+
 								</tr>
 							</thead>
 							<tbody>
@@ -143,8 +143,7 @@ END;
 			</div>
 
 			<div class="col-md-4">
-				<?php echo $output; ?>
-			</div>
+				<?=$output; ?>
 		</div>
 
 	</div>

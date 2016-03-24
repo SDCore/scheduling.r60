@@ -92,5 +92,7 @@
 			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> <span class="hidden-xs hidden-sm">Home</span></a>
 			<a href="<?php echo $site; ?>/tickets?page=1"><i class="fa fa-ticket"></i> <span class="hidden-xs hidden-sm">Tickets</span></a>
 			<a href="<?php echo $site; ?>/search"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm">Search</span></a>
+			<hr>
+			<a href="/"><i class="fa fa-globe"></i> <span class="hidden-xs hidden-sm">Navigation</span></a>
 		</div>
 	</div>
