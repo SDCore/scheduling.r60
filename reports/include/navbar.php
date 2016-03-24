@@ -93,7 +93,7 @@
 			<a href="#"><i class="fa fa-paperclip"></i> <span class="hidden-xs hidden-sm">Reports</a>
 			<a href="#"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm">Search</span></a>
 			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> <span class="hidden-xs hidden-sm">Info</span></a>
-			<hr>
-<a href="/"><i class="fa fa-globe"></i> <span class="hidden-xs hidden-sm">Navigate</span></a>
+			<hr style="margin-top: 2px; margin-bottom: 2px;">
+			<a href="/"><i class="fa fa-globe"></i> <span class="hidden-xs hidden-sm">Navigate</span></a>
 		</div>
 	</div>
