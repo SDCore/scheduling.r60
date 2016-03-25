@@ -11,6 +11,6 @@
 
 	// Convert JSON to PHP Object
 	$phpObj = json_decode($json);
-	var_dump($phpObj);
+	print_r($phpObj);
 
 ?>
