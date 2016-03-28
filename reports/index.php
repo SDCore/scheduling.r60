@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="col-md-4">
-				<?php include("./include/weather.php"); ?>
+				<?php include("..//global/include/weather.php"); ?>
 			</div>
 		</div>
 

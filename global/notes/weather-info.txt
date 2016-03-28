@@ -1,0 +1,14 @@
+Current Weather Conditions with Images:
+
+Party Cloudy                //      partly-cloudy_png.png
+Fog                         //      fog_png.png
+Cloudy                      //      partly-cloudy_png.png
+Mostly Cloudy               //      mostly-cloudy_png.png
+Rain                        //      rain_png.png
+Sleet and Freezing Rain     //      sleet-freezing-rain_png.png
+Freezing Rain               //      sleet-freezing-rain_png.png
+Sleet                       //      sleet-freezing-rain_png.png
+Light Rain                  //      light-rain_png.png
+Fair                        //      fair_png.png
+---------------------------------------------------------------
+Default / Fallback          //      sunny_png.png
