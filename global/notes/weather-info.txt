@@ -10,9 +10,10 @@ Freezing Rain               //      sleet-freezing-rain_png.png
 Sleet                       //      sleet-freezing-rain_png.png
 Light Rain                  //      light-rain_png.png
 Fair                        //      fair_png.png
+Mostly Sunny                //      mostly-sunny_png.png
 ---------------------------------------------------------------
 Default / Fallback          //      sunny_png.png
 
 
 Images To Do:
-Mostly Sunny                //      mostly-sunny_png.png
+None
