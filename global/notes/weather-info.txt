@@ -12,3 +12,7 @@ Light Rain                  //      light-rain_png.png
 Fair                        //      fair_png.png
 ---------------------------------------------------------------
 Default / Fallback          //      sunny_png.png
+
+
+Images To Do:
+Mostly Sunny                //      mostly-sunny_png.png
