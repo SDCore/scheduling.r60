@@ -1,0 +1,8 @@
+Individual Profiles
+-Each person has an individual profile with their name, store, and average hours worked
+-You create reports inside the profile
+
+Different Groups for Questions
+
+File Uploading
+-Uploading a file (ie. average sales) to a persons profile
