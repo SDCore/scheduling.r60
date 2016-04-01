@@ -58,6 +58,8 @@
 		$picture = "/reports/assets/imgs/weather/fair_png.png";
 	}elseif($currentText == "Mostly Sunny") {
 		$picture = "/reports/assets/imgs/weather/fair_png.png";	
+	}elseif($currentText == "Scattered Showers") {
+		$picture = "/reports/assets/imgs/weather/scattered-showers_png.png";
 	}else{
 		$picture = "../reports/assets/imgs/weather/sunny_png.png";
 	}

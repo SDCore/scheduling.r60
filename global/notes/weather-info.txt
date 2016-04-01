@@ -10,10 +10,11 @@ Freezing Rain               //      sleet-freezing-rain_png.png
 Sleet                       //      sleet-freezing-rain_png.png
 Light Rain                  //      light-rain_png.png
 Fair                        //      fair_png.png
-Mostly Sunny                //      mostly-sunny_png.png
+Mostly Sunny                //      fair_png.png
+Scattered Showers           //      scattered-showers_png.png
 ---------------------------------------------------------------
 Default / Fallback          //      sunny_png.png
 
 
 Images To Do:
-Scattered Showers           //      scattered-showers_png.png
+None
