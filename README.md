@@ -1,4 +1,4 @@
-# Welcome!
+# Detail Manager
 
 This project is to help simplify the Detail System at Route 60 Auto Wash & Detail. This helps make the switch from paper tickets, which have proven to be unreliable and easily lost, to a website that is easy to use, with a database that is easily accessible and keeps records for future use.
 
@@ -9,3 +9,7 @@ A lot of the functionality is really basic, simply adding and updating informati
 ## Yahoo! Weather API
 
 The Yahoo! Weather API is in use on the main pages of the Report and Detail manager, displaying current weather conditions for today and 4 days in advance. It simply gets information from a JSON request made via a URL (ie. https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text=%27mundelein,%20il%27)&format=json) and uses PHP's json_decode function to get all needed information. The max amount of API calls per day is 2,000.
+
+# Report Manager
+
+The report system is a WIP.
