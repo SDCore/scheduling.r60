@@ -36,30 +36,32 @@
 	$dayFourHigh = $phpObj->query->results->channel->item->forecast[4]->high;
 	$dayFourLow = $phpObj->query->results->channel->item->forecast[4]->low;
 
+	$weatherImgLocation = "/global/weather_imgs";
+
 	if($currentText == "Partly Cloudy") {
 		$picture = "../reports/assets/imgs/weather/partly-cloudy_png.png";
 	}elseif($currentText == "Fog") {
- 		$picture = "/reports/assets/imgs/weather/fog_png.png";
+ 		$picture = $weatherImgLocation . "/fog_png.png";
  	}elseif($currentText == "Cloudy") {
-		$picture = "/reports/assets/imgs/weather/partly-cloudy_png.png";
+		$picture = $weatherImgLocation . "/partly-cloudy_png.png";
 	}elseif($currentText == "Mostly Cloudy") {
-		$picture = "/reports/assets/imgs/weather/mostly-cloudy_png.png";
+		$picture = $weatherImgLocation . "/mostly-cloudy_png.png";
 	}elseif($currentText == "Rain"){
-		$picture = "/reports/assets/imgs/weather/rain_png.png";
+		$picture = $weatherImgLocation . "/rain_png.png";
 	}elseif($currentText == "Sleet and Freezing Rain"){
-		$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
+		$picture = $weatherImgLocation . "/sleet-freezing-rain_png.png";
 	}elseif($currentText == "Freezing Rain"){
-		$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
+		$picture = $weatherImgLocation . "/sleet-freezing-rain_png.png";
 	}elseif($currentText == "Sleet"){
-		$picture = "/reports/assets/imgs/weather/sleet-freezing-rain_png.png";
+		$picture = $weatherImgLocation . "/sleet-freezing-rain_png.png";
 	}elseif($currentText == "Light Rain") {
-		$picture = "/reports/assets/imgs/weather/light-rain_png.png";
+		$picture = $weatherImgLocation . "/light-rain_png.png";
 	}elseif($currentText == "Fair") {
-		$picture = "/reports/assets/imgs/weather/fair_png.png";
+		$picture = $weatherImgLocation . "/fair_png.png";
 	}elseif($currentText == "Mostly Sunny") {
-		$picture = "/reports/assets/imgs/weather/fair_png.png";	
+		$picture = $weatherImgLocation . "/fair_png.png";	
 	}elseif($currentText == "Scattered Showers") {
-		$picture = "/reports/assets/imgs/weather/scattered-showers_png.png";
+		$picture = $weatherImgLocation . "/scattered-showers_png.png";
 	}else{
 		$picture = "../reports/assets/imgs/weather/sunny_png.png";
 	}

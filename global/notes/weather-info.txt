@@ -11,7 +11,7 @@ Sleet                       //      sleet-freezing-rain_png.png
 Light Rain                  //      light-rain_png.png
 Fair                        //      fair_png.png
 Mostly Sunny                //      fair_png.png
-Scattered Showers           //      scattered-showers_png.png
+Scattered Showers           //      rain_png.png
 ---------------------------------------------------------------
 Default / Fallback          //      sunny_png.png
 

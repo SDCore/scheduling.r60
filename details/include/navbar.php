@@ -7,7 +7,7 @@
 	<?php
 	
 		if(logged_in() === true) {
-			$title = $user_data['name']." ";
+			$title = $user_data['name']." - ";
 		}else{
 			$title = "";
 		}
