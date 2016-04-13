@@ -39,7 +39,7 @@
 	$weatherImgLocation = "/global/weather_imgs";
 
 	if($currentText == "Partly Cloudy") {
-		$picture = "../reports/assets/imgs/weather/partly-cloudy_png.png";
+		$picture = $weatherImgLocation . "/partly-cloudy_png.png";
 	}elseif($currentText == "Fog") {
  		$picture = $weatherImgLocation . "/fog_png.png";
  	}elseif($currentText == "Cloudy") {
@@ -63,7 +63,7 @@
 	}elseif($currentText == "Scattered Showers") {
 		$picture = $weatherImgLocation . "/scattered-showers_png.png";
 	}else{
-		$picture = "../reports/assets/imgs/weather/sunny_png.png";
+		$picture = $weatherImgLocation . "/sunny_png.png";
 	}
 
 ?>

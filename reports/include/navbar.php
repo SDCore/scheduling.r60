@@ -91,6 +91,7 @@
 		<div class="links">
 			<a href="<?php echo $site; ?>"><i class="fa fa-home"></i> <span class="hidden-xs hidden-sm">Home</span></a>
 			<a href="#"><i class="fa fa-paperclip"></i> <span class="hidden-xs hidden-sm">Reports</a>
+			<a href="<?php echo $site; ?>/people?page=1"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm">People</a>
 			<a href="#"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm">Search</span></a>
 			<a href="<?php echo $site; ?>/info"><i class="fa fa-info-circle"></i> <span class="hidden-xs hidden-sm">Info</span></a>
 			<hr style="margin-top: 2px; margin-bottom: 2px;">
