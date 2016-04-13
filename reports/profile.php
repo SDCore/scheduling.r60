@@ -32,8 +32,41 @@
 				<div class="card">
 					<div class="card-title"><?php echo $firstName; ?> <?php echo $lastName; ?> - #<?php echo $storeID; ?> <span style="float: right;"><?php echo $storeName; ?></span></div>
 					<div class="card-content">
-						<div class="col-md-4">
-							<img src="<?php echo $picture; ?>" style="width: 100%;" />
+						<div class="row">
+							<div class="col-md-4">
+								<img src="<?php echo $picture; ?>" style="width: 100%;" />
+							</div>
+							<div class="col-md-4">&nbsp;</div>
+							<div class="col-md-4" style="text-align: center;">
+								$$$ Average: <?php echo $average; ?>
+								<br />
+								Strikes: <?php echo $strikes; ?>/3
+								<br />
+								Rating: <?php echo $rating; ?>/5
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-6">
+								<a href="#" class="button-raised">+ Strike</a>
+							</div>
+							<div class="col-md-6">
+								<a href="#" class="button-raised">- Strike</a>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#" class="button-raised">New Report</a>
+							</div>
+							<br /><br />
+							<div class="col-md-12">
+								<a href="#" class="button-raised">Edit Report</a>
+							</div>
+							<br /><br />
+							<div class="col-md-12">
+								<a href="#" class="button-raised">Edit Profile</a>
+							</div>
 						</div>
 						<div class="clear"></div>
 					</div>
