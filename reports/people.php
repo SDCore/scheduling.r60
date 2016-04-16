@@ -133,12 +133,22 @@
 									<td>Strikes</td>
 									<td>Rating</td>
 									<td>Store ID</td>
+									<td>Currently Hired</td>
 								</tr>
 							</thead>
 							<tbody>
 								<?php
 
 									while($row = mysql_fetch_array($result2)) {
+
+										$working = $row['working'];
+
+										if($working == 1) {
+								        	$workOut = "<h6 style='color: #20B473; margin: 0px; font-size: 20px;'>&check;</h6>";
+								        }else{
+								        	$workOut = "<h6 style='color: #E14747; margin: 0px; font-size: 20px;'>X</h6>";
+								        }
+
 										echo '<tr>';
 										echo '<td>';
 										echo "<a href='".$site."/profile?id=".$row['id']."'>".$row['first_name'].' '.$row['last_name']."</a>";
@@ -158,12 +168,19 @@
 										echo '<td>';
 										echo $row['storeID'];
 										echo '</td>';
+										echo '<td>';
+										echo $workOut;
+										echo '</td>';
 										echo '</tr>';
 									}
 
 								?>
 							</tbody>
 						</table>
+					</div>
+					<div class="card-footer">
+						<?=$pagination?>
+						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
