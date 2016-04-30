@@ -107,7 +107,42 @@
 				<div class="card">
 					<div class="card-title"><?php echo $firstName; ?>'s Reports</div>
 					<div class="card-content">
-						hihi
+						<table class="table" padding="10" style="text-align: center;">
+							<thead>
+								<tr>
+									<td>Date</td>
+									<td>Score</td>
+									<td>Completed</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>4/30/2016</td>
+									<td>4.5/5</td>
+									<td>C</td>
+								</tr>
+								<tr>
+									<td>4/30/2016</td>
+									<td>4.5/5</td>
+									<td>C</td>
+								</tr>
+								<tr>
+									<td>4/30/2016</td>
+									<td>4.5/5</td>
+									<td>C</td>
+								</tr>
+								<tr>
+									<td>4/30/2016</td>
+									<td>4.5/5</td>
+									<td>C</td>
+								</tr>
+								<tr>
+									<td>4/30/2016</td>
+									<td>4.5/5</td>
+									<td>C</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
