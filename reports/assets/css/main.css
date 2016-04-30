@@ -258,6 +258,21 @@ td {
   background: #999999;
   pointer-events: none; }
 
+.textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 6px 7px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #DEDEDE;
+  transition: border-bottom 0.18s ease; }
+  .textarea:focus {
+    border-bottom: 2px solid #ABABAB; }
+
 input[type='text'] {
   width: 100%;
   border: none;

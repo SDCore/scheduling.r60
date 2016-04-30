@@ -23,6 +23,7 @@
         	$rating = $row['rating'];
         	$working = $row['working'];
         	$phoneNumber = $row['phone_number'];
+        	$qnotes = $row['quicknotes'];
         }
 
         if($working == 1) {
@@ -87,6 +88,26 @@
 					<div class="card-footer">
 						<a href="#" class="button-flat" style="float: right;">Print Profile</a>
 						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-title">Quick Notes</div>
+					<div class="card-content">
+						<textarea class="textarea" name="quicknotes" id="quicknotes" placeholder="Type notes here..." rows="8"><?php echo $qnotes; ?></textarea>
+						<br />
+						<input type="submit" class="button-raised" name="updatenotes" id="updatenotes" value="Update Notes" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-title"><?php echo $firstName; ?>'s Reports</div>
+					<div class="card-content">
+						hihi
 					</div>
 				</div>
 			</div>
