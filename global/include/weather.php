@@ -23,18 +23,22 @@
 	$dayOneDay = $phpObj->query->results->channel->item->forecast[1]->day;
 	$dayOneHigh = $phpObj->query->results->channel->item->forecast[1]->high;
 	$dayOneLow = $phpObj->query->results->channel->item->forecast[1]->low;
+	$dayOneText = $phpObj->query->results->channel->item->forecast[1]->text;
 
 	$dayTwoDay = $phpObj->query->results->channel->item->forecast[2]->day;
 	$dayTwoHigh = $phpObj->query->results->channel->item->forecast[2]->high;
 	$dayTwoLow = $phpObj->query->results->channel->item->forecast[2]->low;
+	$dayTwoText = $phpObj->query->results->channel->item->forecast[2]->text;
 
 	$dayThreeDay = $phpObj->query->results->channel->item->forecast[3]->day;
 	$dayThreeHigh = $phpObj->query->results->channel->item->forecast[3]->high;
 	$dayThreeLow = $phpObj->query->results->channel->item->forecast[3]->low;
+	$dayThreeText = $phpObj->query->results->channel->item->forecast[3]->text;
 
 	$dayFourDay = $phpObj->query->results->channel->item->forecast[4]->day;
 	$dayFourHigh = $phpObj->query->results->channel->item->forecast[4]->high;
 	$dayFourLow = $phpObj->query->results->channel->item->forecast[4]->low;
+	$dayFourText = $phpObj->query->results->channel->item->forecast[4]->text;
 
 	$weatherImgLocation = "/global/weather_imgs";
 
@@ -91,6 +95,8 @@
 						High: <?php echo $dayOneHigh; ?>&deg;F
 						 / 
 						Low: <?php echo $dayOneLow; ?>&deg;F
+						 /
+						<?php echo $dayOneText; ?>
 					</span>
 				</div>
 				<div class="col-md-12">
@@ -99,6 +105,8 @@
 						High: <?php echo $dayTwoHigh; ?>&deg;F
 						 / 
 						Low: <?php echo $dayTwoLow; ?>&deg;F
+						 /
+						<?php echo $dayTwoText; ?>
 					</span>
 				</div>
 				<div class="col-md-12">
@@ -107,6 +115,8 @@
 						High: <?php echo $dayThreeHigh; ?>&deg;F
 						 / 
 						Low: <?php echo $dayThreeLow; ?>&deg;F
+						 /
+						<?php echo $dayThreeText; ?>
 					</span>
 				</div>
 				<div class="col-md-12">
@@ -115,6 +125,8 @@
 						High: <?php echo $dayFourHigh; ?>&deg;F
 						 / 
 						Low: <?php echo $dayFourLow; ?>&deg;F
+						 /
+						<?php echo $dayFourText; ?>
 					</span>
 				</div>
 			</div>
