@@ -12,4 +12,4 @@ The Yahoo! Weather API is in use on the main pages of the Report and Detail mana
 
 # Report Manager
 
-The report system is a WIP.
+This project is to create a new Report System at Route 60 Auto Wash & Detail. This will make it easy to access employee records and reports that will display performance, score, amount of strikes, ways of contact, and whether or not they are currently hired.
